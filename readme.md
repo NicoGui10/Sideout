@@ -1,4 +1,4 @@
-<h1>Xemulator</h1>
+<h1>Sideout</h1>
 <p>Esta es una tienda de ropa que ayuda a la flora y fauna marina</p>
 
 <h2>Tencnologias usadas</h2> 

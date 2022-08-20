@@ -1,7 +1,7 @@
 {
   "name": "proyecto__sideout",
   "version": "1.0.0",
-  "description": "",
+  "description": "<h1>Sideout</h1>\r <p>Esta es una tienda de ropa que ayuda a la flora y fauna marina</p>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,5 +13,13 @@
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicoGui10/Sideout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NicoGui10/Sideout/issues"
+  },
+  "homepage": "https://github.com/NicoGui10/Sideout#readme"
 }

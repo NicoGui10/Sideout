@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,8 @@ html {
 
 /*titulos*/
 /*titulos*/
+/*Tamaños fuentes*/
+/*Tamaños fuentes*/
 /*Colores*/
 /*Colores*/
 .nav__envio {
@@ -21,8 +24,76 @@ html {
     padding: 8px;
     color: antiquewhite; }
 
-.nav__logo {
-  width: 100%;
-  height: 45px;
+.nav__cart {
+  padding: 10px;
   display: flex;
-  justify-content: center; }
+  justify-content: space-around; }
+
+.logo {
+  width: 50px; }
+
+.nav__1 ul {
+  list-style: none;
+  display: flex;
+  padding-left: 85%; }
+  .nav__1 ul li a {
+    color: #1D2C53;
+    text-decoration: none;
+    padding-left: 25px;
+    font-size: 20px; }
+
+.navbar-collapse {
+  display: flex;
+  justify-content: space-around; }
+  .navbar-collapse ul li {
+    padding: 10px; }
+    .navbar-collapse ul li a {
+      font-size: 30px;
+      color: #1D2C53; }
+
+.Titulo__index {
+  text-align: center;
+  padding-top: 20px; }
+  .Titulo__index p {
+    font-size: 15px; }
+
+.main__clothes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .main__clothes img {
+    padding: 50px; }
+
+.camiseta__buton {
+  text-align: center; }
+
+.camiseta p {
+  text-align: center; }
+
+.Form {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: space-around; }
+  .Form__buton {
+    text-align: center; }
+    .Form__buton a {
+      background-color: #1D2C53;
+      border: none; }
+
+.Form__suscribindex {
+  width: 900px;
+  height: 400px;
+  background-color: #D9D9D9; }
+  .Form__suscribindex h2 {
+    text-align: center;
+    padding-top: 15px; }
+  .Form__suscribindex p {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center; }
+
+.camiseta__buton a {
+  background-color: #1D2C53;
+  border: none; }

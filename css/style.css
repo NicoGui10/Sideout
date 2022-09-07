@@ -92,6 +92,15 @@ html {
   .camiseta p {
     text-align: center; }
 
+.item img {
+  width: 100px;
+  height: 100px; }
+
+.Product-fin {
+  color: #D9D9D9;
+  font-size: 25px;
+  background-color: #1D2C53; }
+
 .Form {
   padding-top: 200px;
   padding-bottom: 200px;

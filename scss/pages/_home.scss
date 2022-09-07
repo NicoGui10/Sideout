@@ -126,11 +126,18 @@
 }
 
 
+.item{
+    img{
+        width: 100px;
+        height: 100px;
+    }
+}
 
-
-
-
-
+.Product-fin{
+    color: #D9D9D9;
+    font-size: 25px;
+    background-color: $primary-color
+}
 
 .Form {
     padding-top: 200px;

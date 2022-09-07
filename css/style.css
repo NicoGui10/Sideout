@@ -32,15 +32,38 @@ html {
 .logo {
   width: 50px; }
 
-.nav__1 ul {
-  list-style: none;
+.container__cart {
   display: flex;
-  padding-left: 85%; }
+  justify-content: flex-end;
+  align-items: center; }
+
+.nav__1 ul li {
+  list-style: none; }
   .nav__1 ul li a {
-    color: #1D2C53;
     text-decoration: none;
-    padding-left: 25px;
-    font-size: 20px; }
+    color: #1D2C53; }
+
+.nav__2 {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 40px; }
+  .nav__2 img {
+    width: 50px;
+    height: 50px; }
+
+.cart-products {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  background-color: #fff;
+  padding: 0 18px;
+  box-shadow: 0 3px 10px black;
+  display: none;
+  min-width: 290px; }
+
+.X__Close {
+  width: 15px;
+  height: 15px; }
 
 .navbar-collapse {
   display: flex;
@@ -57,18 +80,17 @@ html {
   .Titulo__index p {
     font-size: 15px; }
 
-.main__clothes {
+.MainClothes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly; }
-  .main__clothes img {
+  .MainClothes img {
     padding: 50px; }
 
-.camiseta__buton {
+.camiseta {
   text-align: center; }
-
-.camiseta p {
-  text-align: center; }
+  .camiseta p {
+    text-align: center; }
 
 .Form {
   padding-top: 200px;

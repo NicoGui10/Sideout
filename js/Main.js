@@ -63,9 +63,9 @@ function readTheContent(product) {
 
 
 
-    const ExSid = buythisCart.some(product => product.id === infoProduct.id);
-    if (ExSid) {
-        const ExSid = buythisCart.map(product => {
+    const CountExSid = buythisCart.some(product => product.id === infoProduct.id);
+    if (CountExSid) {
+        const CountExSid = buythisCart.map(product => {
             if (product.id === infoProduct.id) {
                 product.amount++;
                 return product;
@@ -74,7 +74,7 @@ function readTheContent(product) {
                 return product
             }
         });
-        buythisCart = [...ExSid];
+        buythisCart = [...CountExSid];
     }
     else {
         buythisCart = [...buythisCart, infoProduct]
@@ -92,7 +92,7 @@ function loadHtml() {
         row.innerHTML = `
         <div class="item">
                         <img src="${image}" alt="">
-                        <div class="item-content">
+                        <div class="itemContainer">
                             <h5>${title}</h5>
                             <h5 class="${price}">$</h5>
                             <h6> Amount: ${amount}</h6>
@@ -101,8 +101,8 @@ function loadHtml() {
                     </div>
         
         `;
-        /*<span class="Product-fin" data-id="${id}">X</span>*/
-        /*<button class="Product-fin" data-id="${id}">X</button>*/
+        
+        
         containetcart.appendChild(row);
 
         TotalPrice.innerHTML = TotalProduct;

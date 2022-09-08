@@ -66,6 +66,7 @@
     display: none;
 
     min-width: 290px;
+    
 }
 
 .X__Close{
@@ -127,6 +128,7 @@
 
 
 .item{
+    display: flex;
     img{
         width: 100px;
         height: 100px;
@@ -179,4 +181,7 @@
         border: none;
     }
 }
+
+/*carrito de compras interior*/
+
 

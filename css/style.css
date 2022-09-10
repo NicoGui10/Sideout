@@ -29,14 +29,6 @@ html {
   display: flex;
   justify-content: space-around; }
 
-.logo {
-  width: 50px; }
-
-.container__cart {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; }
-
 .nav__1 ul li {
   list-style: none; }
   .nav__1 ul li a {
@@ -51,6 +43,48 @@ html {
     width: 50px;
     height: 50px; }
 
+.navbar-collapse {
+  display: flex;
+  justify-content: space-around; }
+  .navbar-collapse ul li {
+    padding: 10px; }
+    .navbar-collapse ul li a {
+      font-size: 30px;
+      color: #1D2C53; }
+
+.X__Close {
+  width: 15px;
+  height: 15px; }
+
+.item {
+  padding: 15px;
+  display: flex; }
+  .item img {
+    width: 100px;
+    height: 100px; }
+
+.buttonDeleteCart {
+  padding-left: 100px; }
+
+.itemContainer {
+  padding: 10px; }
+
+.Product-fin {
+  width: 20px;
+  height: 30px;
+  border-radius: 15%;
+  color: #D9D9D9;
+  font-size: 20px;
+  background-color: #1D2C53; }
+
+.logo {
+  width: 50px; }
+
+.container__cart {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
 .cart-products {
   position: absolute;
   top: 20px;
@@ -60,19 +94,6 @@ html {
   box-shadow: 0 3px 10px black;
   display: none;
   min-width: 290px; }
-
-.X__Close {
-  width: 15px;
-  height: 15px; }
-
-.navbar-collapse {
-  display: flex;
-  justify-content: space-around; }
-  .navbar-collapse ul li {
-    padding: 10px; }
-    .navbar-collapse ul li a {
-      font-size: 30px;
-      color: #1D2C53; }
 
 .Titulo__index {
   text-align: center;
@@ -89,14 +110,10 @@ html {
 
 .camiseta {
   text-align: center; }
+  .camiseta span {
+    box-sizing: border-box; }
   .camiseta p {
     text-align: center; }
-
-.item {
-  display: flex; }
-  .item img {
-    width: 100px;
-    height: 100px; }
 
 .Product-fin {
   color: #D9D9D9;
@@ -126,9 +143,3 @@ html {
     padding-left: 40px;
     padding-right: 40px;
     text-align: center; }
-
-.camiseta__buton a {
-  background-color: #1D2C53;
-  border: none; }
-
-/*carrito de compras interior*/

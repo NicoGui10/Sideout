@@ -1,0 +1,96 @@
+.login{
+    background-image: linear-gradient(180deg, #575765 0, #3d405c 25%, #1c2b53 50%, #00184a 75%, #000041 100%);
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 4%;
+    
+    &__lario {
+        width: 500px;
+        height: 600px;
+        text-align: center;
+        background: #fff;
+        padding: 100px ;
+        box-shadow:6px  rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+    }
+    button{
+        background: -webkit-linear-gradient(180deg, #575765 0, #3d405c 25%, #1c2b53 50%, #00184a 75%, #000041 100%);
+        border: none;
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        color: #fff;
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+
+
+.Registro{
+    input{
+        background: none;
+        color: #c6c6c6;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    
+    
+    
+    input:focus{ 
+        outline: none;
+        color: #5e5d5d;
+    }
+    
+    label{
+        color: black;
+        font-size: 16px;
+        position: relative;
+        left: 5px;
+        top: 10px;
+        transition: 0.5s ease all;
+        pointer-events: none;
+    }
+    
+    input:focus~label,
+    input:valid~label{
+        top: -24px;
+        font-size: 12px;
+        color: #2196f3;
+    }
+    .linea{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    
+    .linea::before{
+        content: "";
+        height: 2px;
+        width: 0%;
+        bottom: 0;
+        position: absolute;
+        background: linear-gradient(to right, #B06AB3, #4568DC);
+        transition: 0.3s ease width;
+        left: 0;
+    }
+    
+    input:focus~.linea::before{
+        width: 100%;
+    }
+    
+    
+}
+
+
+.botonSuscrib{
+    padding-top: 50px;
+}

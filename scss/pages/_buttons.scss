@@ -1,0 +1,24 @@
+
+/* boton de compra index*/
+.camiseta{
+    a{
+        border: none;
+        background-color: $primary-color;
+    }
+    a:hover{
+        color: beige;
+        background-color: rgb(82, 95, 105);
+        border: solid $primary-color;
+        
+    }
+    
+}
+/* boton de compra index*/
+
+.FormIndex{
+    .buttonSubmitIndex{
+        padding:10px ;
+        background-color: $primary-color;
+        border: none;
+    }
+}

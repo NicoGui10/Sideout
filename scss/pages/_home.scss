@@ -57,7 +57,7 @@
 .Product-fin {
     color: #D9D9D9;
     font-size: 25px;
-    background-color: $primary-color
+    background-color: $primary-color;
 }
 
 .Form {
@@ -94,6 +94,15 @@
     }
 }
 
+/*Precio camiseta*/
+.camiseta{
+    p{
+        span{color: #D9D9D9;
+            padding: 7px;
+            background-color: $primary-color;
+            border-radius: 30%;
+        }
+    }
+}
 
-
-
+/*Precio camiseta*/

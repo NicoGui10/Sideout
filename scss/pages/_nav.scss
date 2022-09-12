@@ -60,3 +60,55 @@
         }
     }
 }
+
+/* footer*/
+.footer {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between
+}
+
+.core_info {
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.core_info ul li {
+    list-style: none;
+    color: white;
+    font-family: 'Port Lligat Slab';
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.follow_us {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.follow_us p {
+    padding-bottom: 10px;
+    color: aliceblue;
+    font-family: 'Port Lligat Slab';
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.social-media img {
+    padding: 5px;
+}
+
+.payment {
+    padding-right: 40px;
+    padding-top: 30px;
+}
+
+.payment p {
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+    font-family: 'Port Lligat Slab';
+    font-size: 15px;
+    font-weight: lighter;
+}

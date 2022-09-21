@@ -1,11 +1,12 @@
+
+//Declaro las constantes con get element by ID
+
 const nombre = document.getElementById("name");
 const email = document.getElementById("email");
 const pass = document.getElementById("pass");
 const referido = document.getElementById("referido");
 const form = document.getElementById("form");
 const alerta = document.getElementById("alerta");
-
-
 
 form.addEventListener("submit", e => {
     e.preventDefault();
@@ -15,7 +16,7 @@ form.addEventListener("submit", e => {
     alerta.innerHTML = "";
     if (nombre.value.length < 7) {
         alertname += `
-        El nombre no es valido <br>
+        El nombre no es valido !<br>
         `
         Enjoy = true;
     }
@@ -27,13 +28,13 @@ form.addEventListener("submit", e => {
     }
     if (pass.value.length < 8) {
         alertname += `
-        La Contraseña no es valida <br>
+        La Contraseña no es valida !<br>
         `
         Enjoy = true;
     }
     if (referido.value.length < 2) {
         alertname += `
-        El referido no es valido <br>
+        El referido no es valido !<br>
         `
         Enjoy = true;
     }

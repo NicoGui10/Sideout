@@ -8,6 +8,15 @@ let TotalProduct = 0;
 let ProductCount = 0;
 
 
+//Cart funcion//
+    function showCart(x) {
+        document.getElementById("products-id").style.display = "block";
+    }
+    function closeButton() {
+        document.getElementById("products-id").style.display = "none";
+    }
+//Cart funcion//
+
 
 //Functions
 LoadProductEvent();

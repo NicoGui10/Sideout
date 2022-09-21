@@ -1,0 +1,35 @@
+
+.contenedorProducto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardSale {
+    display: flex;
+    justify-content: flex-end;
+    .cardSale__categoria {
+        
+        padding: 5px;
+        color: aliceblue;
+        background-color: $primary-color ;
+    }
+}
+
+.card{
+    
+    h5{
+        text-align: center;
+    }
+    .precioStock{
+        text-align: center;
+    } 
+    button{
+        background-color: $primary-color ;
+    }
+}
+
+
+.cardProductos{
+    padding: 50px;
+}

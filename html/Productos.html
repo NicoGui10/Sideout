@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--boostrap-->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Productos</title>
+</head>
+<body>
+    <div class="nav__envio">
+        <p>
+            Envio apartir de $10000
+        </p>
+    </div>
+    <div class="nav__cart">
+       <a href="../index.html"> <img class="logo" src="../img/logo.png" alt="logo"></a>
+    </div>
+    <div class="container__cart">
+        <div class="nav__1">
+            <div class="loginIndex">
+            <ul>
+                <li><a href="../html/login.html">Registrarse</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="container__nav2">
+            <div class="nav__2">
+                <img onmouseover="showCart(this)" class="Carrito__img" src="../img/pngegg.png" alt="">
+                <p class="ContadorProd">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeButton()"><img class="X__Close" src="../img/pngwing.com.png" alt="">
+                </p>
+                <h4>Mi carrito</h4>
+                <div class="card-items">
+                </div>
+                <h2>Total: <strong class="PriceTotal">0</strong> $</h2>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a  class="nav-link" href="#">Outlet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Adopta Un Coral</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="contenedorProducto" id="contenedorProducto">
+        <!--
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          -->
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="core_info">
+                <ul>
+                    <li>
+                        Av. Libertador 4625
+                    </li>
+                    <li>
+                        www.Sideout.com
+                    </li>
+                    <li>
+                        cel +54 1196658874
+                    </li>
+                </ul>
+            </div>
+            <div class="follow_us">
+                <p>Follow us</p>
+                <div class="social-media">
+                    <img src="../img/ig.png" alt="instagram logo">
+                    <img src="../img/twitter.png" alt="twitter logo">
+                    <img src="../img/youtube.png" alt="youtube logo">
+                </div>
+            </div>
+            <div class="payment">
+                <p>2022, Beourguest.com</p>
+                <img src="../img/amex-logo.jpg" alt="american express logo">
+                <img src="../img/visa-logo.jpg" alt="visa logo">
+                <img src="../img/Binance-logo.png" alt="binance logo">
+                <img src="../img/mc-logo.jpg" alt="mastercard logo">
+            </div>
+        </div>
+    </footer>
+
+     <!-- JavaScript Bboostrap-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+     crossorigin="anonymous"></script>
+ <!-- JavaScript Bboostrap-->
+
+  <!--JS-->
+  <script src="../js/Main.js"></script>
+  <script src="../js/products.js"></script>
+  <script src="../js/stock.js"></script>
+  <!--JS-->
+</body>
+</html>

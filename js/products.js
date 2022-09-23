@@ -39,7 +39,7 @@ let productos =[
 },
 
 {
-    id:4,
+    id:5,
     nombre: "Camiseta robin",
     detalle:"sadasdas",
     categoria:"OnSale",
@@ -77,6 +77,7 @@ let productos =[
     stock:5,
     img:"../img/camiseta8.png"
 },
+
 
 
 

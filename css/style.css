@@ -103,6 +103,21 @@ main {
   width: 15px;
   height: 15px; }
 
+.container__cart {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.cart-products {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  background-color: #fff;
+  padding: 0 18px;
+  box-shadow: 0 3px 10px black;
+  display: none;
+  min-width: 290px; }
+
 .item {
   padding: 15px;
   display: flex; }
@@ -127,40 +142,11 @@ main {
 .logo {
   width: 50px; }
 
-.container__cart {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; }
-
-.cart-products {
-  position: absolute;
-  top: 20px;
-  right: 60px;
-  background-color: #fff;
-  padding: 0 18px;
-  box-shadow: 0 3px 10px black;
-  display: none;
-  min-width: 290px; }
-
 .Titulo__index {
   text-align: center;
   padding-top: 20px; }
   .Titulo__index p {
     font-size: 15px; }
-
-.camiseta {
-  text-align: center;
-  text-align: center; }
-  .camiseta p {
-    padding: 10px;
-    width: 75px;
-    background-color: #1D2C53;
-    color: #D9D9D9;
-    border-radius: 40%; }
-  .camiseta img {
-    display: flex; }
-  .camiseta span {
-    box-sizing: border-box; }
 
 .Product-fin {
   color: #D9D9D9;
@@ -191,22 +177,14 @@ main {
     padding-right: 40px;
     text-align: center; }
 
-/*Precio camiseta*/
-.camiseta b span {
-  color: #D9D9D9;
-  padding: 7px;
-  background-color: #1D2C53;
-  border-radius: 30%; }
-
-/*Precio camiseta*/
 /* boton de compra index*/
-.camiseta a {
-  border: none;
+.camiseta button {
+  width: 100%;
   background-color: #1D2C53; }
 
-.camiseta a:hover {
+.camiseta button:hover {
   color: beige;
-  background-color: #525f69;
+  background-color: #063356;
   border: solid #1D2C53; }
 
 /* boton de compra index*/
@@ -296,7 +274,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 100px; }
+  padding: 100px;
+  gap: 40px; }
 
 .cardSale {
   display: flex;
@@ -317,3 +296,29 @@ main {
 
 .cardProductos {
   padding: 50px; }
+
+.camiseta {
+  background-color: #fff;
+  box-shadow: 0 3px 10px black;
+  padding: 25px;
+  text-align: center; }
+  .camiseta p {
+    padding: 10px;
+    width: 75px;
+    background-color: #1D2C53;
+    color: #D9D9D9;
+    border-radius: 40%; }
+  .camiseta img {
+    display: flex;
+    padding-bottom: 5px; }
+  .camiseta span {
+    box-sizing: border-box; }
+
+/*Precio camiseta*/
+.camiseta b span {
+  color: #D9D9D9;
+  padding: 7px;
+  background-color: #1D2C53;
+  border-radius: 30%; }
+
+/*Precio camiseta*/

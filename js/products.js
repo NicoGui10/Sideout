@@ -35,7 +35,7 @@ let productos =[
     categoria:"OnSale",
     precio:5500,
     stock:5,
-    img:"../img/camiseta4.png"
+    img:"../img/camiseta1.png"
 },
 
 {
@@ -70,6 +70,42 @@ let productos =[
 
 {
     id:8,
+    nombre: "Camiseta sen",
+    detalle:"sadasdas",
+    categoria:"OnSale",
+    precio:5500,
+    stock:5,
+    img:"../img/camiseta8.png"
+},
+{
+    id:9,
+    nombre: "Camiseta sen",
+    detalle:"sadasdas",
+    categoria:"OnSale",
+    precio:5500,
+    stock:5,
+    img:"../img/camiseta8.png"
+},
+{
+    id:10,
+    nombre: "Camiseta sen",
+    detalle:"sadasdas",
+    categoria:"OnSale",
+    precio:5500,
+    stock:5,
+    img:"../img/camiseta8.png"
+},
+{
+    id:11,
+    nombre: "Camiseta sen",
+    detalle:"sadasdas",
+    categoria:"OnSale",
+    precio:5500,
+    stock:5,
+    img:"../img/camiseta8.png"
+},
+{
+    id:12,
     nombre: "Camiseta sen",
     detalle:"sadasdas",
     categoria:"OnSale",

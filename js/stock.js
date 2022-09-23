@@ -5,15 +5,16 @@ function mostrarProductos(items) {
     contenedorProducto.innerHTML += `
     
     <div class="camiseta">
-    <p class="card-text cardSale__categoria">${element.categoria}</p>
-                <img src=${element.img} alt="camiseta3">
-                <b><span>${element.precio}</span></b>
-                <h4>${element.nombre}</h4>
+        <p class="card-text cardSale__categoria"> ${element.precio} $</p>
+                    <img src=${element.img} alt="camiseta3">
+                    
+                    <h4>${element.nombre}</h4>
+    
+                    <button class="btn btn-primary button__index" tabindex="-1" role="button"
+                aria-disabled="true" data-id=${element.id}>Comprar</button>
+                    
+                </div>
 
-                <a class="btn btn-primary button__index" tabindex="-1" role="button"
-                    aria-disabled="true" data-id=${element.id}>Comprar</a>
-                
-            </div>
         `
 
   });
@@ -22,3 +23,6 @@ function mostrarProductos(items) {
 }
 mostrarProductos(productos)
 
+/*
+                    <b><span>${element.precio}</span></b>
+                    */

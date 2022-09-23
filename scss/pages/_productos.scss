@@ -4,10 +4,13 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 100px;
+    gap: 40px;
+    
 
 }
 
 .cardSale {
+   
     display: flex;
     justify-content: flex-end;
     .cardSale__categoria {
@@ -35,3 +38,42 @@
 .cardProductos{
     padding: 50px;
 }
+
+.camiseta {
+    background-color: #fff;
+    box-shadow: 0 3px 10px black;
+    padding: 25px;
+    text-align: center;
+    p{
+       padding: 10px;
+       width: 75px;
+       background-color: $primary-color;
+       color: #D9D9D9;
+       border-radius: 40%;
+       
+      
+       
+    }
+    img{
+        display: flex;
+        padding-bottom: 5px;
+    }
+    span {
+        box-sizing: border-box;
+    }
+
+}
+
+/*Precio camiseta*/
+.camiseta{
+   
+    b{
+        span{color: #D9D9D9;
+            padding: 7px;
+            background-color: $primary-color;
+            border-radius: 30%;
+        }
+    }
+}
+
+/*Precio camiseta*/

@@ -2,7 +2,9 @@
 .contenedorProducto{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 100px;
+
 }
 
 .cardSale {

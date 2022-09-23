@@ -1,5 +1,5 @@
 //Variables 
-let AllContainer = document.querySelector(".MainClothes");
+let AllContainer = document.querySelector(".contenedorProducto");
 let containetcart = document.querySelector(".card-items");
 let TotalPrice = document.querySelector(".PriceTotal");
 let contadorAmount = document.querySelector(".ContadorProd");

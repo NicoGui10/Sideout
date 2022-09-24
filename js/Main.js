@@ -9,12 +9,12 @@ let ProductCount = 0;
 
 
 //Cart funcion//
-    function showCart(x) {
-        document.getElementById("products-id").style.display = "block";
-    }
-    function closeButton() {
-        document.getElementById("products-id").style.display = "none";
-    }
+function showCart(x) {
+    document.getElementById("products-id").style.display = "block";
+}
+function closeButton() {
+    document.getElementById("products-id").style.display = "none";
+}
 //Cart funcion//
 
 
@@ -24,6 +24,7 @@ function LoadProductEvent() {
     AllContainer.addEventListener("click", AddProduct);
 
     containetcart.addEventListener("click", deleteProduct);
+    
 }
 
 function AddProduct(i) {
@@ -31,8 +32,9 @@ function AddProduct(i) {
     if (i.target.classList.contains("button__index")) {
         const ProductSelec = i.target.parentElement;
         readTheContent(ProductSelec);
-
+        
     }
+    
 
 }
 
@@ -46,17 +48,21 @@ function deleteProduct(i) {
                 TotalProduct = TotalProduct - priceReduce;
                 TotalProduct = TotalProduct.toFixed(2);
 
-
             }
+            
         });
         buythisCart = buythisCart.filter(product => product.id !== deleteId)
-        ProductCount --;
+        ProductCount--;
     }
-    if(buythisCart.length ===0);
+    if (buythisCart.length === 0);
     TotalPrice.innerHTML = 0;
-    contadorAmount.innerHTML = 0; 
-
+    contadorAmount.innerHTML = 0;
     loadHtml();
+    
+    
+    
+
+
 
 }
 /**Tomo  recursos desde el html */
@@ -69,14 +75,15 @@ function readTheContent(product) {
         amount: 1
 
     }
-
     
+
+
 
     TotalProduct = parseFloat(TotalProduct) + parseFloat(infoProduct.price);
     TotalProduct = TotalProduct.toFixed(2);
 
-/**Tomo  recursos desde el html */
-
+    /**Tomo  recursos desde el html */
+     
 
     const CountExSid = buythisCart.some(product => product.id === infoProduct.id);
     if (CountExSid) {
@@ -85,19 +92,26 @@ function readTheContent(product) {
                 product.amount++;
                 return product;
             }
+            
             else {
                 return product
             }
+            
         });
         buythisCart = [...CountExSid];
     }
     else {
         buythisCart = [...buythisCart, infoProduct]
-        ProductCount ++;
-    }    
+        ProductCount++;
+    }
     loadHtml();
-
+     //AGREGE PARA EL LOCAL STORAGE PRUEBA 
+    
 }
+
+
+
+
 
 
 /**PRINT */
@@ -120,16 +134,35 @@ function loadHtml() {
         
         `;
 
-
+         
         containetcart.appendChild(row);
 
         TotalPrice.innerHTML = TotalProduct;
 
         contadorAmount.innerHTML = ProductCount;
     });
-
+    addLocalStorage() //LOCAL STORAGE PRUEBA //AGREGE PARA EL LOCAL STORAGE PRUEBA 
 }
+
 /**PRINT */
 function clearHtml() {
     containetcart.innerHTML = "";
 }
+
+//LOCAL STORAGE PRUEBA 
+
+
+function addLocalStorage(){
+    localStorage.setItem('carrito', JSON.stringify(buythisCart))
+  }
+  
+  window.onload = function(){
+    const storage = JSON.parse(localStorage.getItem('carrito'));
+    if(storage){
+        buythisCart = storage;
+        loadHtml()
+    }
+  }
+
+  
+//LOCAL STORAGE PRUEBA 

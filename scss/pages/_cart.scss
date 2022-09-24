@@ -8,7 +8,24 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 2%;
+    .loginIndex{
+        ul{
+            li{
+                a{
+                    img{
+                        width: 30px;
+                        
+                        
+                    }
+                    
+                }
+            }
+        }
+    }
 }
+
+
 
 .cart-products {
     position: absolute;

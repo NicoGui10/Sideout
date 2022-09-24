@@ -36,7 +36,7 @@ main {
   list-style: none; }
   .nav__1 ul li a {
     text-decoration: none;
-    color: #1D2C53; }
+    color: aliceblue; }
 
 .nav__2 {
   display: flex;
@@ -53,7 +53,7 @@ main {
     padding: 10px; }
     .navbar-collapse ul li a {
       font-size: 30px;
-      color: #1D2C53; }
+      color: aliceblue; }
 
 /* footer*/
 .footer {
@@ -106,7 +106,10 @@ main {
 .container__cart {
   display: flex;
   justify-content: flex-end;
-  align-items: center; }
+  align-items: center;
+  padding: 2%; }
+  .container__cart .loginIndex ul li a img {
+    width: 30px; }
 
 .cart-products {
   position: absolute;
@@ -147,6 +150,25 @@ main {
   padding-top: 20px; }
   .Titulo__index p {
     font-size: 15px; }
+
+.container__index {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative; }
+
+.container__index::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(../img/Carrousel3.jpg);
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 96%, 0 80%);
+  z-index: -1; }
 
 .Product-fin {
   color: #D9D9D9;

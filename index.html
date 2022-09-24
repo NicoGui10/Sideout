@@ -21,44 +21,25 @@
 </head>
 
 <body>
-    <div class="nav__envio">
-        <p>
-            Envio apartir de $10000
-        </p>
-    </div>
-    <div class="nav__cart">
-        <img class="logo" src="./img/logo.png" alt="logo">
-    </div>
-    <div class="container__cart">
-        <div class="nav__1">
-            <div class="loginIndex">
-            <ul>
-                <li><a href="./html/login.html">Registrarse</a></li>
-            </ul>
-            </div>
-        </div>
-        <div class="container__nav2">
-            <div class="nav__2">
-                <img onmouseover="showCart(this)" class="Carrito__img" src="./img/pngegg.png" alt="">
-                <p class="ContadorProd">0</p>
-            </div>
-            <div class="cart-products" id="products-id">
-                <p class="close-btn" onclick="closeButton()"><img class="X__Close" src="./img/pngwing.com.png" alt="">
-                </p>
-                <h4>Mi carrito</h4>
-                <div class="card-items">
+    
+        <div class="container__index">
+            
+        <div class="container__cart">
+            <div class="nav__1">
+                <div class="loginIndex">
+                    <ul>
+                        <li><a href="./html/login.html"><img src="./img/Registrarse.svg" alt=""></a></li>
+                    </ul>
                 </div>
-                <h2>Total: <strong class="PriceTotal">0</strong> $</h2>
             </div>
         </div>
 
-    </div>
-    </div>
     <nav class="navbar navbar-expand-lg">
+
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span><img src="./img/menu.svg" alt=""></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -81,51 +62,27 @@
             </div>
         </div>
     </nav>
-
-    <main>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/Carrousel1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/Carrousel2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/carrousel3.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </main>
+    </div>
+    
+</div>
     <div class="Form">
         <div class="Form__suscribindex">
             <h2> FORMA PARTE DEL CAMBIO !</h2>
             <p>
                 Introduce tu email para recibir información sobre actividades de limpieza de playas, proyectos con los
                 que
-                colaboramos y mucho más contenido para que juntos podamos lograr un cambio en los océanos y la vida marina.
+                colaboramos y mucho más contenido para que juntos podamos lograr un cambio en los océanos y la vida
+                marina.
             </p>
             <form class="FormIndex" action="">
                 <p>
                     <label for=""></label>
                     <input type="text" name="fullname" id="fullname" required>
-                    <input type="submit" class="btn btn-primary buttonSubmitIndex" tabindex="-1" role="button" aria-disabled="true">
+                    <input type="submit" class="btn btn-primary buttonSubmitIndex" tabindex="-1" role="button"
+                        aria-disabled="true">
                 </p>
             </form>
-            
+
         </div>
     </div>
 
@@ -163,24 +120,6 @@
     </footer>
 
 
-    <div class="camiseta">
-        <p class="card-text cardSale__categoria">${element.categoria}</p>
-                    <img src=${element.img} alt="camiseta3">
-                    <div class="contenedorInfoProduct">
-                    <b><span>${element.precio}</span></b>
-                    <h4>${element.nombre}</h4>
-    
-                    <a class="btn btn-primary button__index" tabindex="-1" role="button"
-                        aria-disabled="true" data-id=${element.id}>Comprar</a>
-                    </div>
-                </div>
-
-
-                <button class="btn btn-primary button__index" tabindex="-1" role="button"
-                aria-disabled="true" data-id=${element.id}>Comprar</button>
-
-
-
 
 
 
@@ -211,17 +150,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

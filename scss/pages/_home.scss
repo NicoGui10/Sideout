@@ -170,6 +170,7 @@
 /*TESTIMONY*/
 .Testimony {
     padding: 50px;
+    
 
 
     .TestimonyBodyShow {
@@ -181,6 +182,7 @@
 
 
     .TestimonyContainer {
+        border-radius: 5px;
         background-color: #9B8D83;
         display: grid;
         grid-template-columns: 50px 1fr 50px;

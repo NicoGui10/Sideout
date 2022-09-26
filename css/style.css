@@ -252,6 +252,7 @@
     opacity: 1;
     transition: opacity 1.5s ease-in-out; }
   .Testimony .TestimonyContainer {
+    border-radius: 5px;
     background-color: #9B8D83;
     display: grid;
     grid-template-columns: 50px 1fr 50px;

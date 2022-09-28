@@ -130,6 +130,18 @@
   font-size: 20px;
   background-color: #1D2C53; }
 
+/*NUEVO CART*/
+.imgProductCart {
+  width: 100px;
+  height: 100px; }
+
+.ElementCount {
+  width: 50px;
+  height: 50px; }
+
+.cart1 {
+  background-color: none; }
+
 .logo {
   width: 50px; }
 
@@ -311,6 +323,10 @@
   .buttonIndex button {
     color: aliceblue; }
 
+.Cart__Button {
+  display: flex;
+  justify-content: flex-end; }
+
 .login {
   background-image: linear-gradient(180deg, #575765 0, #3d405c 25%, #1c2b53 50%, #00184a 75%, #000041 100%); }
 
@@ -441,6 +457,11 @@
   border-radius: 30%; }
 
 /*Precio camiseta*/
+/*PRODUDCTOS 2*/
+.productsMenuDesp {
+  display: flex;
+  flex-wrap: wrap; }
+
 * {
   margin: 0;
   padding: 0;

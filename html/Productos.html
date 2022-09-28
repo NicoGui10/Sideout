@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,137 +10,114 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--boostrap-->
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <!-- Google Fonts -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Productos</title>
+    <title>SideOut</title>
 </head>
-<body>
-    <div class="nav__envio">
-        <p>
-            Envio apartir de $10000
-        </p>
-    </div>
-    <div class="nav__cart">
-       <a href="../index.html"> <img class="logo" src="../img/logo.png" alt="logo"></a>
-    </div>
-    <div class="container__cart">
-        <div class="nav__1">
-            <div class="loginIndex">
-            <ul>
-                <li><a href="../html/login.html">Registrarse</a></li>
-            </ul>
-            </div>
-        </div>
-        <div class="container__nav2">
-            <div class="nav__2">
-                <img onmouseover="showCart(this)" class="Carrito__img" src="../img/pngegg.png" alt="">
-                <p class="ContadorProd">0</p>
-            </div>
-            <div class="cart-products" id="products-id">
-                <p class="close-btn" onclick="closeButton()"><img class="X__Close" src="../img/pngwing.com.png" alt="">
-                </p>
-                <h4>Mi carrito</h4>
-                <div class="card-items">
-                </div>
-                <h2>Total: <strong class="PriceTotal">0</strong> $</h2>
-            </div>
-        </div>
 
-    </div>
-    </div>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a  class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Adopta Un Coral</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
+<body>
+
+    <nav>
+        <div class="nav__envio">
+            <p>
+                Envio apartir de $10000
+            </p>
+        </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">Productos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">Accesorios</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+                    role="tab" aria-controls="contact" aria-selected="false">Sale</button>
+            </li>
+        </ul>
+        <!--carrito outcanvas-->
+
+        <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">boton de carrito</button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header productsMenuDesp">
+                <h5 id="offcanvasRightLabel">Productos</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                
+                    <table class="table CartGrilla">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Productos</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Precio</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody class="ContainerCarttBody">
+                            
+                    
+                    
+                        </tbody>
+                    </table>
+                    <div class="row mx-4">
+                        <div class="col">
+                            <h3 class="TotalCart">Total 0</h3>
+                        </div>
+                        <div class="col d-flex justify content-end">
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+               
+                
             </div>
+            <div class="offcanvas-body">
+                
+            </div>
+        </div>
+        <!--carrito outcanvas-->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="Productos">
+                <div class="contenedorProducto" id="contenedorProducto"></div>
+                <!--Contenedor de productos Principales-->
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
         </div>
     </nav>
 
 
+
+
+
+
+
+
+    <!-- JavaScript Bboostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- JavaScript Bboostrap-->
+
+
+    <script src="../js/products.js"></script>
+    <script src="../js/stock.js"></script>
+    <script src="../js/Cart.js"></script>
     
-
-    <div class="contenedorProducto" id="contenedorProducto">
-      
-    </div>
-    
-
-
-
-
-
-
-
-
-
-    <footer>
-        <div class="footer">
-            <div class="core_info">
-                <ul>
-                    <li>
-                        Av. Libertador 4625
-                    </li>
-                    <li>
-                        www.Sideout.com
-                    </li>
-                    <li>
-                        cel +54 1196658874
-                    </li>
-                </ul>
-            </div>
-            <div class="follow_us">
-                <p>Follow us</p>
-                <div class="social-media">
-                    <img src="../img/ig.png" alt="instagram logo">
-                    <img src="../img/twitter.png" alt="twitter logo">
-                    <img src="../img/youtube.png" alt="youtube logo">
-                </div>
-            </div>
-            <div class="payment">
-                <p>2022, Beourguest.com</p>
-                <img src="../img/amex-logo.jpg" alt="american express logo">
-                <img src="../img/visa-logo.jpg" alt="visa logo">
-                <img src="../img/Binance-logo.png" alt="binance logo">
-                <img src="../img/mc-logo.jpg" alt="mastercard logo">
-            </div>
-        </div>
-    </footer>
-
-     <!-- JavaScript Bboostrap-->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-     crossorigin="anonymous"></script>
- <!-- JavaScript Bboostrap-->
-
-  <!--JS-->
- 
-  <script src="../js/products.js"></script>
-  <script src="../js/stock.js"></script>
-  <script src="../js/Main.js"></script>
-  <!--JS-->
 </body>
+
 </html>
+
+<!--
+<input type="number" min="1" value=${item.cantidad} class="ElementCount">
+
+<p type="number" min="1" value=${item.cantidad} class="ElementCount"></p>
+
+-->

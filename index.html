@@ -39,6 +39,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span><img src="./img/menu.svg" alt=""></span>
+                    
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -60,7 +61,57 @@
                     </ul>
                 </div>
             </div>
+
         </nav>
+
+
+        <!--carrito outcanvas-->
+        <div class="Cart__Button">
+        <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"><img class="cart1" src="./img/cart1.svg" alt=""></button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header productsMenuDesp">
+                <h5 id="offcanvasRightLabel">Productos</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+
+                <table class="table CartGrilla">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Productos</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Precio</th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="ContainerCarttBody">
+
+
+
+                    </tbody>
+                </table>
+                <div class="row mx-4">
+                    <div class="col">
+                        <h3 class="TotalCart">Total 0</h3>
+                    </div>
+                    <div class="col d-flex justify content-end">
+                        <button>Comprar</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="offcanvas-body">
+
+            </div>
+        </div>
+        <!--carrito outcanvas-->
+
+
+
+
         <h1>El Cambio Es Ahora</h1>
         <div class="buttonIndex">
             <a href="./html/Productos.html"> <button type="button" class="btn btn-outline-secondary">Comprar
@@ -126,24 +177,18 @@
             <section class="TestimonyBody" data-id="3">
                 <div class="testimonyText">
                     <h4 class="subtitle">Mi nombre es alex, <span class="TestimonyCourse">Estudiante</span></h4>
-                    <p class="TestimonyReview">Lorem  tempora temporibus.</p>
+                    <p class="TestimonyReview">Lorem tempora temporibus.</p>
                 </div>
                 <figure class="TestimonyPic"><img src="./img/Testimonios3.jpg" class="TestimonyImg" alt=""></figure>
             </section>
             <img src="./img/Arrowright.svg" class="TestimonyArrow" id="next" alt="">
         </div>
-        
+
 
     </section>
 
 
     <!--Testimonios -->
-
-
-
-
-
-
 
 
     <div class="Form">
@@ -217,7 +262,10 @@
 
     <!--JS-->
     <script src="./js/slider.js"></script>
-    
+    <script src="../js/products.js"></script>
+    <script src="../js/stock.js"></script>
+    <script src="../js/Cart.js"></script>
+
     <!--JS-->
 </body>
 

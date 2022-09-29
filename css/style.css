@@ -97,8 +97,10 @@
   padding: 2%; }
   .container__cart .nav__1 {
     display: flex; }
-  .container__cart .loginIndex ul li a img {
-    width: 30px; }
+  .container__cart .loginIndex ul {
+    align-items: center; }
+    .container__cart .loginIndex ul li a img {
+      width: 30px; }
 
 .cart-products {
   position: absolute;
@@ -328,9 +330,17 @@
   .buttonIndex button {
     color: aliceblue; }
 
-.Cart__Button {
-  display: flex;
-  justify-content: flex-end; }
+.Cart__Button button {
+  background-color: unset;
+  border: none; }
+  .Cart__Button button img {
+    width: 35px;
+    height: 35px; }
+
+/*Boton Register*/
+.RegitreIndex a img {
+  width: 35px;
+  height: 35px; }
 
 .login {
   background-image: linear-gradient(180deg, #575765 0, #3d405c 25%, #1c2b53 50%, #00184a 75%, #000041 100%); }

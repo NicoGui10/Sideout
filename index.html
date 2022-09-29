@@ -22,19 +22,24 @@
     <!--Comienzo del nav + background principal-->
 
     <div class="container__index">
-
         <div class="container__cart">
             <div class="nav__1">
                 <div class="loginIndex">
+                    <div class="Regitre">
                     <ul>
                         <li><a href="./html/login.html"><img src="./img/Registrarse.svg" alt=""></a></li>
                     </ul>
                 </div>
+                    <div class="Cart__Button">
+                        <button class="butonprueba" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight"><img class="cart1" src="./img/cart1.svg" alt=""></button>
+                        </div>
+                </div>
             </div>
         </div>
-
-        <nav class="navbar navbar-expand-lg">
-
+        
+      
+        <nav class="navbar navbar-expand-lg NavIndexBar">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,14 +67,11 @@
                 </div>
             </div>
 
+         
         </nav>
 
-
         <!--carrito outcanvas-->
-        <div class="Cart__Button">
-        <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"><img class="cart1" src="./img/cart1.svg" alt=""></button>
-        </div>
+        
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header productsMenuDesp">
                 <h5 id="offcanvasRightLabel">Productos</h5>
@@ -79,7 +81,7 @@
                 <table class="table CartGrilla">
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
+                            <th scope="col"></th>
                             <th scope="col">Productos</th>
                             <th scope="col">Cantidad</th>
                             <th scope="col">Precio</th>
@@ -262,10 +264,9 @@
 
     <!--JS-->
     <script src="./js/slider.js"></script>
-    <script src="../js/products.js"></script>
-    <script src="../js/stock.js"></script>
-    <script src="../js/Cart.js"></script>
-
+    <script src="./js/products.js"></script>
+    <script src="./js/stock.js"></script>
+    <script src="./js/Cart.js"></script>
     <!--JS-->
 </body>
 

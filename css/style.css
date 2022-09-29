@@ -94,8 +94,9 @@
 .container__cart {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   padding: 2%; }
+  .container__cart .nav__1 {
+    display: flex; }
   .container__cart .loginIndex ul li a img {
     width: 30px; }
 
@@ -141,6 +142,10 @@
 
 .cart1 {
   background-color: none; }
+
+.loginIndex {
+  display: flex;
+  gap: 10px; }
 
 .logo {
   width: 50px; }

@@ -5,10 +5,15 @@
 }
 
 .container__cart {
+   display: flex;
+   justify-content: flex-end;
+   padding: 2%;
+
+   .nav__1{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 2%;
+    
+   }
+
     .loginIndex{
         ul{
             li{
@@ -24,8 +29,6 @@
         }
     }
 }
-
-
 
 .cart-products {
     position: absolute;
@@ -85,4 +88,9 @@
 
 .cart1{
     background-color: none;
+}
+
+.loginIndex{
+    display: flex;
+    gap: 10px;
 }

@@ -1,8 +1,9 @@
 //Declaro constantes
-
-const ClickAgregar = document.querySelectorAll(".buttonAgregar")
-const ContainerCart = document.querySelector(".ContainerCarttBody")
+const ClickAgregar = document.querySelectorAll(".buttonAgregar");
+const ContainerCart = document.querySelector(".ContainerCarttBody");
+const ProccessPago = document.querySelector(".BtnComprar");
 let CarritoProductos = []
+
 
 ClickAgregar.forEach(btn => {
     btn.addEventListener("click", AddCarritoProduct) //Capturo el boton
@@ -74,6 +75,9 @@ function CartLook() { //Cada vez que presiono click guardo en la variable todos 
 
     })
     CartTotal();
+
+
+
 }
 
 function CartTotal() {

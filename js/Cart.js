@@ -34,7 +34,7 @@ function AdditemCart(NewItemCart) {
     for (let i = 0; i < CarritoProductos.length; i++) { //Le doy funcion de suma al carrito y que no repita productos
         if (CarritoProductos[i].title.trim() === NewItemCart.title.trim()) {
             CarritoProductos[i].cantidad++;
-
+            
             const InputValue = ElementCount[i]
             InputValue.value++;
             CartTotal();
@@ -139,12 +139,25 @@ function SumaCount(e) {
 
 function LocalStorage() {
     localStorage.setItem('carrito', JSON.stringify(CarritoProductos))
-  }
-  
-  window.onload = function () {
+}
+
+window.onload = function () {
     const storage = JSON.parse(localStorage.getItem('carrito'));
     if (storage) {
-    CarritoProductos = storage;
-    CartLook();
+        CarritoProductos = storage;
+        CartLook();
     }
-  }
+}
+
+
+
+/**Toastify Emergent */
+const EmergentAlert = document.querySelector(".buttonAgregar");
+EmergentAlert.addEventListener("click",() =>{
+Toastify({
+    Text:"djnaskjdas",
+    duration: 3000
+    
+}).showToast();
+})
+

@@ -6,7 +6,7 @@
 /*Colores*/
 /*Colores*/
 .nav__envio {
-  background-color: #1D2C53;
+  background-color: #1B2B3B;
   width: 100%;
   height: 40px;
   text-align: center; }
@@ -19,12 +19,6 @@
   padding: 10px;
   display: flex;
   justify-content: space-around; }
-
-.nav__1 ul li {
-  list-style: none; }
-  .nav__1 ul li a {
-    text-decoration: none;
-    color: aliceblue; }
 
 .nav__2 {
   display: flex;
@@ -39,54 +33,40 @@
   justify-content: space-around; }
   .navbar-collapse ul li {
     padding: 10px; }
+    .navbar-collapse ul li :hover {
+      color: #CDA279; }
     .navbar-collapse ul li a {
       font-size: 30px;
       color: aliceblue; }
 
-/* footer*/
-.footer {
-  background-color: #1D2C53;
+/*Nav Resto pag*/
+.navBarAllPrincipal {
+  padding: 0; }
+
+.navBarAll {
+  text-align: center;
+  background-color: #1B2B3B; }
+
+.navPrincipalAll {
   display: flex;
-  justify-content: space-between; }
+  justify-content: center; }
 
-.core_info {
-  padding-left: 40px;
-  padding-top: 30px; }
+.nav__1 {
+  position: absolute;
+  left: 90%; }
 
-.core_info ul li {
-  list-style: none;
-  color: white;
-  font-family: 'Port Lligat Slab';
-  font-size: 15px;
-  font-weight: lighter; }
+/*Nav Resto pag*/
+/*NavSecundarioProductos*/
+.NavSecundarioProductos {
+  display: flex;
+  padding: 20px; }
+  .NavSecundarioProductos ul {
+    border-radius: 5%; }
+    .NavSecundarioProductos ul li button {
+      color: #740606;
+      font-size: 2em; }
 
-.follow_us {
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px; }
-
-.follow_us p {
-  padding-bottom: 10px;
-  color: aliceblue;
-  font-family: 'Port Lligat Slab';
-  font-size: 15px;
-  font-weight: lighter; }
-
-.social-media img {
-  padding: 5px; }
-
-.payment {
-  padding-right: 40px;
-  padding-top: 30px; }
-
-.payment p {
-  text-align: center;
-  color: white;
-  padding-bottom: 10px;
-  font-family: 'Port Lligat Slab';
-  font-size: 15px;
-  font-weight: lighter; }
-
+/*NavSecundarioProductos*/
 .X__Close {
   width: 15px;
   height: 15px; }
@@ -426,6 +406,9 @@
   padding: 100px;
   gap: 40px; }
 
+.tittleProductos {
+  padding-left: 20px; }
+
 .cardSale {
   display: flex;
   justify-content: flex-end; }
@@ -476,6 +459,38 @@
 .productsMenuDesp {
   display: flex;
   flex-wrap: wrap; }
+
+footer {
+  background-color: #1B2B3B;
+  color: white; }
+  footer .footer__tittle {
+    margin-bottom: 20px; }
+  footer .footer__container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around; }
+  footer .footer__nav {
+    min-width: 350px; }
+    footer .footer__nav h3 {
+      padding: 0; }
+    footer .footer__nav ul {
+      padding: 0;
+      text-align: justify; }
+      footer .footer__nav ul li {
+        list-style: none; }
+        footer .footer__nav ul li :hover {
+          color: #CDA279; }
+  footer .MetodosPago {
+    text-align: center; }
+  footer .footer__Suscr {
+    align-items: center; }
+  footer .footer__form {
+    text-align: center; }
+    footer .footer__form .TextEmailFooter {
+      width: 150;
+      height: 30px; }
+  footer .Copyright {
+    text-align: center; }
 
 * {
   margin: 0;

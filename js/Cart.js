@@ -151,8 +151,11 @@ window.onload = function () {
 
 
 
-/**Toastify Emergent */
-const EmergentAlert = document.querySelector(".buttonAgregar");
+/**Toastify Emergent 
+
+const EmergentAlert = document.getElementsByName("BotonComprar"); ;
+
+
 EmergentAlert.addEventListener("click",() =>{
 Toastify({
     Text:"djnaskjdas",
@@ -160,4 +163,9 @@ Toastify({
     
 }).showToast();
 })
+
+*/
+
+
+
 

@@ -6,7 +6,7 @@ let productosAccesorios =[
     categoria:"OnSale",
     precio:5500,
     stock:5,
-    img:"../img/camiseta1.png"
+    img:"../img/accesorios1.jpg"
 },
 {
     id:2,
@@ -15,7 +15,7 @@ let productosAccesorios =[
     categoria:"OnSale",
     precio:5500,
     stock:5,
-    img:"../img/camiseta2.png"
+    img:"../img/accesorios2.jpg"
 },
 
 {
@@ -25,7 +25,7 @@ let productosAccesorios =[
     categoria:"OnSale",
     precio:5500,
     stock:5,
-    img:"../img/camiseta3.png"
+    img:"../img/accesorios3.jpg"
 },
 
 {
@@ -35,7 +35,7 @@ let productosAccesorios =[
     categoria:"OnSale",
     precio:5500,
     stock:5,
-    img:"../img/camiseta1.png"
+    img:"../img/accesorios4.jpg"
 },
 
 {
@@ -45,7 +45,7 @@ let productosAccesorios =[
     categoria:"OnSale",
     precio:5500,
     stock:5,
-    img:"../img/camiseta5.png"
+    img:"../img/accesorios5.jpg"
 },
 
 {
@@ -55,7 +55,7 @@ let productosAccesorios =[
     categoria:"OnSale",
     precio:5500,
     stock:5,
-    img:"../img/camiseta6.png"
+    img:"../img/accesorios6.jpg"
 },
 
 {
@@ -65,7 +65,7 @@ let productosAccesorios =[
     categoria:"OnSale",
     precio:5500,
     stock:5,
-    img:"../img/camiseta7.png"
+    img:"../img/accesorios7.jpg"
 },
 
 {
@@ -75,7 +75,7 @@ let productosAccesorios =[
     categoria:"OnSale",
     precio:5500,
     stock:5,
-    img:"../img/camiseta8.png"
+    img:"../img/accesorios8.jpg"
 },
 {
     id:9,
@@ -84,7 +84,7 @@ let productosAccesorios =[
     categoria:"OnSale",
     precio:5500,
     stock:5,
-    img:"../img/camiseta8.png"
+    img:"../img/accesorios9.jpg"
 },
 {
     id:10,
@@ -93,7 +93,7 @@ let productosAccesorios =[
     categoria:"OnSale",
     precio:5500,
     stock:5,
-    img:"../img/camiseta8.png"
+    img:"../img/accesorios10.jpg"
 },
 {
     id:11,
@@ -102,7 +102,7 @@ let productosAccesorios =[
     categoria:"OnSale",
     precio:5500,
     stock:5,
-    img:"../img/camiseta8.png"
+    img:"../img/accesorios11.jpg"
 },
 {
     id:12,
@@ -111,7 +111,7 @@ let productosAccesorios =[
     categoria:"OnSale",
     precio:5500,
     stock:5,
-    img:"../img/camiseta8.png"
+    img:"../img/accesorios12.jpg"
 },
 
 

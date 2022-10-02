@@ -1,3 +1,6 @@
+
+
+
 //Declaro constantes
 const ClickAgregar = document.querySelectorAll(".buttonAgregar");
 const ContainerCart = document.querySelector(".ContainerCarttBody");
@@ -7,6 +10,7 @@ let CarritoProductos = []
 
 ClickAgregar.forEach(btn => {
     btn.addEventListener("click", AddCarritoProduct) //Capturo el boton
+   
 })
 
 function AddCarritoProduct(e) {
@@ -27,8 +31,27 @@ function AddCarritoProduct(e) {
 }
 
 
-function AdditemCart(NewItemCart) {
+function AdditemCart(NewItemCart) { //Funcion que agrega productos al carrito
     const ElementCount = ContainerCart.getElementsByClassName("ElementCount")
+
+    
+//Alerta emergente dentro de la funcion de agregar producto
+    Toastify({
+        text: "Producto Agregado",
+        duration: 1500,  
+        newWindow: true,
+        close: true,
+        gravity: "top", 
+        position: "right", 
+        stopOnFocus: true, 
+        style: {
+          background: "#1B2B3B",
+        },
+        onClick: function(){} 
+      }).showToast();
+
+   //Alerta emergente dentro de la funcion de agregar producto
+
 
 
     for (let i = 0; i < CarritoProductos.length; i++) { //Le doy funcion de suma al carrito y que no repita productos
@@ -39,7 +62,9 @@ function AdditemCart(NewItemCart) {
             InputValue.value++;
             CartTotal();
             return null;
+            
         }
+       
     }
 
 
@@ -165,7 +190,17 @@ Toastify({
 })
 
 */
+/*
 
+const EmergentAlert =document.getElementById("BotonComprar");
 
+EmergentAlert.addEventListener("click", ()=>{
+swal.fire({
+tittle:"Hla",
+Text:"sadsadsadasdasd"
 
+})
 
+})
+
+*/

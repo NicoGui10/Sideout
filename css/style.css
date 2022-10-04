@@ -711,82 +711,126 @@ template {
   .totalCartPrincipal button:hover::before {
     width: 250%; }
 
-.login {
-  background-image: linear-gradient(180deg, #575765 0, #3d405c 25%, #1c2b53 50%, #00184a 75%, #000041 100%); }
+.container-form {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  transition: all .5s ease-out; }
+
+.welcome-back {
+  display: flex;
+  align-items: center;
+  text-align: center; }
+
+.message {
+  padding: 1rem; }
+
+.message h2 {
+  font-size: 1.7rem;
+  padding: 1rem 0; }
+
+.message button {
+  padding: 1rem;
+  font-weight: 400;
+  background-color: #4a4aee;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: .9rem;
+  margin-top: 2rem;
+  transition: all .3s ease-in;
+  color: #fff; }
+
+.message button:hover {
+  background-color: #6464f8; }
 
 .form {
-  display: flex;
-  justify-content: center;
-  padding-top: 150px;
-  padding-bottom: 4%; }
-  .form__lario {
-    width: 500px;
-    height: 600px;
-    text-align: center;
-    background: #fff;
-    padding: 100px;
-    box-shadow: 6px rgba(255, 255, 255, 0.8);
-    border-radius: 10px; }
-  .form button {
-    background: -webkit-linear-gradient(180deg, #575765 0, #3d405c 25%, #1c2b53 50%, #00184a 75%, #000041 100%);
-    border: none;
+  width: 400px;
+  padding: 1rem;
+  margin: 2rem;
+  background-color: rgba(43, 41, 41, 0.602);
+  text-align: center; }
+  .form input {
+    width: 70%;
     display: block;
-    width: 80%;
-    margin: 10px auto;
-    color: #fff;
-    height: 40px;
-    font-size: 16px;
-    cursor: pointer; }
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: white; }
+  .form .botonSuscribe {
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #222; }
 
-.Registro input {
-  background: none;
-  color: #c6c6c6;
-  font-size: 18px;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid black; }
+.TittleForm {
+  padding: 2.7rem 0;
+  font-size: 1.7rem; }
 
-.Registro input:focus {
-  outline: none;
-  color: #5e5d5d; }
+.iconos {
+  padding-bottom: 30px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto; }
 
-.Registro label {
-  color: black;
-  font-size: 16px;
-  position: relative;
-  left: 5px;
-  top: 10px;
-  transition: 0.5s ease all;
-  pointer-events: none; }
+.border-icon {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border: solid thin white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  transition: all .3s ease-in; }
 
-.Registro input:focus ~ label,
-.Registro input:valid ~ label {
-  top: -24px;
-  font-size: 12px;
-  color: #2196f3; }
+.border-icon:hover {
+  background-color: #4a4aee;
+  cursor: pointer; }
 
-.Registro .linea {
-  position: relative;
-  display: block;
-  width: 100%; }
+.cuenta-gratis {
+  padding: 2rem 0; }
 
-.Registro .linea::before {
-  content: "";
-  height: 2px;
-  width: 0%;
-  bottom: 0;
+.sign-in {
   position: absolute;
-  background: linear-gradient(to right, #B06AB3, #4568DC);
-  transition: 0.3s ease width;
-  left: 0; }
+  opacity: 0;
+  visibility: hidden; }
 
-.Registro input:focus ~ .linea::before {
-  width: 100%; }
+.sign-in.active {
+  opacity: 1;
+  visibility: visible; }
 
-.botonSuscrib {
-  padding-top: 50px; }
+.sign-up.active {
+  opacity: 0;
+  visibility: hidden; }
+
+.FormPage {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/BackgroudLogin.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; }
 
 .contenedorProducto {
   display: flex;

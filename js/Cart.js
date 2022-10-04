@@ -2,9 +2,10 @@
 
 
 //Declaro constantes
-const ClickAgregar = document.querySelectorAll(".buttonAgregar");
-const ContainerCart = document.querySelector(".ContainerCarttBody");
-const ProccessPago = document.querySelector(".BtnComprar");
+const
+    ClickAgregar = document.querySelectorAll(".buttonAgregar"),
+    ContainerCart = document.querySelector(".ContainerCarttBody"),
+    ProccessPago = document.querySelector(".BtnComprar");
 let CarritoProductos = []
 
 
@@ -14,11 +15,11 @@ ClickAgregar.forEach(btn => {
 })
 
 function AddCarritoProduct(e) {
-    const Button = e.target
-    const ProducItem = Button.closest(".camiseta") //Le pido que busque la clase mas cercana a Camiseta mediante la funcion de js 
-    const ProductTittle = ProducItem.querySelector(".TittleCart").textContent;
-    const ProductPrecio = ProducItem.querySelector(".PrecioProduct").textContent;
-    const ProductImg = ProducItem.querySelector(".CartImg").src;
+    const Button = e.target,
+    ProducItem = Button.closest(".camiseta"), //Le pido que busque la clase mas cercana a Camiseta mediante la funcion de js 
+    ProductTittle = ProducItem.querySelector(".TittleCart").textContent,
+    ProductPrecio = ProducItem.querySelector(".PrecioProduct").textContent,
+    ProductImg = ProducItem.querySelector(".CartImg").src;
 
     const NewItemCart = { //Declaro items
         title: ProductTittle,
@@ -176,34 +177,3 @@ window.onload = function () {
         CartLook();
     }
 }
-
-
-
-/**Toastify Emergent 
-
-const EmergentAlert = document.getElementsByName("BotonComprar"); ;
-
-
-EmergentAlert.addEventListener("click",() =>{
-Toastify({
-    Text:"djnaskjdas",
-    duration: 3000
-    
-}).showToast();
-})
-
-*/
-/*
-
-const EmergentAlert =document.getElementById("BotonComprar");
-
-EmergentAlert.addEventListener("click", ()=>{
-swal.fire({
-tittle:"Hla",
-Text:"sadsadsadasdasd"
-
-})
-
-})
-
-*/

@@ -1,12 +1,23 @@
 
 //Declaro las constantes con get element by ID
+const 
+    $btnSignIn = document.querySelector('.sign-in-btn'),
+    $btnSignUp = document.querySelector('.sign-up-btn'),
+    $signUp = document.querySelector('.sign-up'),
+    $signIn = document.querySelector('.sign-in'),
+    nombre = document.getElementById("name"),
+    email = document.getElementById("email"),
+    pass = document.getElementById("pass"),
+    referido = document.getElementById("referido"),
+    form = document.getElementById("form"),
+    alerta = document.getElementById("alerta");
 
-const nombre = document.getElementById("name");
-const email = document.getElementById("email");
-const pass = document.getElementById("pass");
-const referido = document.getElementById("referido");
-const form = document.getElementById("form");
-const alerta = document.getElementById("alerta");
+document.addEventListener('click', e => {   //Intercambio el div registro-inicio sesion
+    if (e.target === $btnSignIn || e.target === $btnSignUp) {
+        $signIn.classList.toggle('active');
+        $signUp.classList.toggle('active')
+    }
+});
 
 form.addEventListener("submit", e => {
     e.preventDefault();
@@ -41,7 +52,7 @@ form.addEventListener("submit", e => {
     if (Enjoy) {
         alerta.innerHTML = alertname
     }
-    else{
+    else {
         alerta.innerHTML = "Sent"
     }
 })

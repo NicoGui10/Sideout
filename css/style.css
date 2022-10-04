@@ -416,6 +416,9 @@ template {
     width: 100px;
     height: 100px; }
 
+.TotalCart {
+  color: #1D2C53; }
+
 .buttonDeleteCart {
   padding-left: 100px; }
 
@@ -449,6 +452,12 @@ template {
 .loginIndex {
   display: flex;
   gap: 10px; }
+
+.totalPrincipalCheout {
+  padding-bottom: 30px; }
+
+.CartGrilla thead tr th {
+  width: 100px; }
 
 .logo {
   width: 50px; }
@@ -642,6 +651,65 @@ template {
 .RegitreIndex a img {
   width: 35px;
   height: 35px; }
+
+/**Boton de delete*/
+.deleteCart {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #e62222; }
+  .deleteCart svg {
+    width: 15px;
+    height: 15px;
+    fill: #1D2C53; }
+    .deleteCart svg :hover {
+      fill: red;
+      transition: all 200ms; }
+
+.ElementCount {
+  height: 20px;
+  border: none; }
+
+.totalCartPrincipal {
+  /* Boton de realizar compra */ }
+  .totalCartPrincipal .button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    background-color: #1D2C53; }
+    .totalCartPrincipal .button a {
+      color: #ffffff;
+      text-decoration: none; }
+  .totalCartPrincipal button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391; }
+  .totalCartPrincipal button::before {
+    content: "$$$$$$$";
+    position: absolute;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background-color: #CDA279;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms; }
+  .totalCartPrincipal button:hover::before {
+    width: 250%; }
 
 .login {
   background-image: linear-gradient(180deg, #575765 0, #3d405c 25%, #1c2b53 50%, #00184a 75%, #000041 100%); }

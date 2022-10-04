@@ -42,9 +42,7 @@
     padding: 0 18px;
     box-shadow: 0 3px 10px black;
     display: none;
-
     min-width: 290px;
-
 }
 
 .item {
@@ -57,7 +55,9 @@
     }
 
 }
-
+.TotalCart{
+    color: $primary-color;
+}
 .buttonDeleteCart {
     padding-left: 100px;
 }
@@ -94,6 +94,7 @@
 }
 
 
+
 .cart1 {
     background-color: none;
 }
@@ -101,4 +102,21 @@
 .loginIndex {
     display: flex;
     gap: 10px;
+}
+
+
+.totalPrincipalCheout{
+    padding-bottom: 30px;
+}
+
+
+.CartGrilla{
+    thead{
+        tr{
+            th{
+                width: 100px;
+                
+            }
+        }
+    }
 }

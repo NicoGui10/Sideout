@@ -1,61 +1,149 @@
-
 /* boton de compra index*/
-.camiseta{
-    button{
+.camiseta {
+    button {
         width: 100%;
         background-color: $primary-color;
     }
-    button:hover{
+
+    button:hover {
         color: beige;
         background-color: rgb(6, 51, 86);
         border: solid $primary-color;
-        
+
     }
-    
+
 }
+
 /* boton de compra index*/
 
-.FormIndex{
-    .buttonSubmitIndex{
-        padding:10px ;
+.FormIndex {
+    .buttonSubmitIndex {
+        padding: 10px;
         background-color: $primary-color;
         border: none;
     }
 }
 
 
-.buttonIndex{
-display: flex;
-justify-content: center;
-button{
-    color: aliceblue;
-    
-}
+.buttonIndex {
+    display: flex;
+    justify-content: center;
+
+    button {
+        color: aliceblue;
+
+    }
 }
 
-.Cart__Button{
-    button{
+.Cart__Button {
+    button {
         background-color: unset;
         border: none;
-        
-        img{
+
+        img {
             width: 35px;
             height: 35px;
-          
+
         }
-        
+
     }
 }
 
 
 /*Boton Register*/
 
-.RegitreIndex{
-    a{
-        img{
+.RegitreIndex {
+    a {
+        img {
             width: 35px;
             height: 35px;
-            
+
         }
     }
+}
+
+
+
+/**Boton de delete*/
+.deleteCart {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #e62222;
+
+
+
+
+
+    svg {
+        width: 15px;
+        height: 15px;
+        fill: $primary-color;
+        :hover{
+            fill: red;
+            transition: all 200ms;
+        }
+    }
+
+}
+
+.ElementCount {
+    height: 20px;
+
+    border: none;
+
+}
+
+
+.totalCartPrincipal {
+
+    /* Boton de realizar compra */
+    .button {
+        padding: 1em 2em;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        transition: all 1000ms;
+        font-size: 15px;
+        position: relative;
+        overflow: hidden;
+        background-color: $primary-color;
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+
+    button:hover {
+        color: #ffffff;
+        transform: scale(1.1);
+        outline: 2px solid #70bdca;
+        box-shadow: 4px 5px 17px -4px #268391;
+    }
+
+    button::before {
+        content: "$$$$$$$";
+        position: absolute;
+        left: -50px;
+        width: 0;
+        height: 100%;
+        background-color: $Hover-Color;
+        transform: skewX(45deg);
+        z-index: -1;
+        transition: width 1000ms;
+    }
+
+    button:hover::before {
+        width: 250%;
+    }
+
 }

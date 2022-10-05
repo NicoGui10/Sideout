@@ -13,8 +13,22 @@ function mostrarProductos(items) {
                     
                     <h4 class="TittleCart">${element.nombre}</h4>
     
-                    <button class="btn btn-primary buttonAgregar"  tabindex="-1" role="button"
-                aria-disabled="true" data-id=${element.id}>Comprar</button>     
+                        
+                <button class=" buttonAgregar"  tabindex="-1" role="button"
+                aria-disabled="true" data-id=${element.id}>
+    <div>
+        <span>
+            <a class="TextoButtonComprar">Comprar</a>
+            
+        </span>
+    </div>
+    <div>
+        <span>
+            <a class="TextoButtonComprar">Thank you</a>
+        </span>
+    </div>
+</button>
+                
                 </div>
         `
   });
@@ -34,8 +48,20 @@ function mostrarProductosAccesorios(items) {
                     
                     <h4 class="TittleCart">${element.nombre}</h4>
     
-                    <button class="btn btn-primary buttonAgregar"  tabindex="-1" role="button"
-                aria-disabled="true" id="BotonComprar" data-id=${element.id}>Comprar</button>     
+                    <button class=" buttonAgregar"  tabindex="-1" role="button"
+                    aria-disabled="true" data-id=${element.id}>
+        <div>
+            <span>
+                <a class="TextoButtonComprar">Comprar</a>
+                
+            </span>
+        </div>
+        <div>
+            <span>
+                <a class="TextoButtonComprar">Thank you</a>
+            </span>
+        </div>
+    </button>  
                 </div>
         `
   });
@@ -55,11 +81,27 @@ function mostrarProductosSale(items) {
                     
                     <h4 class="TittleCart">${element.nombre}</h4>
     
-                    <button class="btn btn-primary buttonAgregar" tabindex="-1" role="button"
-                aria-disabled="true" data-id=${element.id}>Comprar</button>     
+                    <button class=" buttonAgregar"  tabindex="-1" role="button"
+                    aria-disabled="true" data-id=${element.id}>
+        <div>
+            <span>
+                <a class="TextoButtonComprar">Comprar</a>
+                
+            </span>
+        </div>
+        <div>
+            <span>
+                <a class="TextoButtonComprar">Thank you</a>
+            </span>
+        </div>
+    </button> 
                 </div>
         `
   });
 
 }
 mostrarProductosSale(productosSale)
+
+
+/**<button class="btn btn-primary buttonAgregar"  tabindex="-1" role="button"
+                aria-disabled="true" data-id=${element.id}>Comprar</button>      */

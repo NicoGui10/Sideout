@@ -13,6 +13,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+
     <!-- Google Fonts -->
 
 
@@ -107,7 +112,6 @@
             <table class="table CartGrilla">
                 <thead>
                     <tr>
-                        <th scope="col"></th>
                         <th scope="col">Productos</th>
                         <th scope="col">Precio</th>
                         <th scope="col">Cantidad</th>
@@ -120,22 +124,18 @@
 
                 </tbody>
             </table>
-            <div class="row mx-4 totalCartPrincipal">
-                <div class="col totalPrincipalCheout">
-                    <h3 class="TotalCart">Total 0</h3>
-                </div>
-
-                <button class="button">
-                    <a href="">procesar pago</a>
-                </button>
-
-
-            </div>
-
-
+            
         </div>
         <div class="offcanvas-body">
 
+        </div>
+        <div class="row mx-4 totalCartPrincipal">
+            <div class="col totalPrincipalCheout">
+                <h3 class="TotalCart">Total 0</h3>
+            </div>
+            <button class="button">
+                <a href="">procesar pago</a>
+            </button>
         </div>
     </div>
     <!--carrito outcanvas-->
@@ -250,10 +250,3 @@
 </body>
 
 </html>
-
-<!--
-<input type="number" min="1" value=${item.cantidad} class="ElementCount">
-
-<p type="number" min="1" value=${item.cantidad} class="ElementCount"></p>
-
--->

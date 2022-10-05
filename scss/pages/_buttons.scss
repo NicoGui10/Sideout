@@ -1,20 +1,68 @@
-/* boton de compra index*/
+
+/*Boton compra Productos*/
 .camiseta {
     button {
+        outline: 0;
+        border: 0;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 50px;
+        border-radius: 0.5em;
+        box-shadow: 0 0.625em 1em 0 $primary-color;
+        overflow: hidden;
+        text-align: center;
+
+    }
+
+    button div {
+        transform: translateY(0px);
         width: 100%;
+    }
+
+    button,
+    button div {
+        transition: 0.6s cubic-bezier(.16, 1, .3, 1);
+    }
+
+    button div span {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 50px;
+        padding: 0.75em 1.125em;
+    }
+
+    button div:nth-child(1) {
         background-color: $primary-color;
     }
 
-    button:hover {
-        color: beige;
-        background-color: rgb(6, 51, 86);
-        border: solid $primary-color;
+    button div:nth-child(2) {
+        background-color: $Hover-Color;
+    }
 
+    button:hover {
+        box-shadow: 0 0.625em 1em 0 rgba(33, 220, 98, 0.35);
+    }
+
+    button:hover div {
+        transform: translateY(-50px);
+    }
+
+    button a {
+        font-size: 17px;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: none;
+
+    }
+
+    button:active {
+        transform: scale(0.95);
     }
 
 }
 
-/* boton de compra index*/
 
 .FormIndex {
     .buttonSubmitIndex {
@@ -54,9 +102,13 @@
 
 .RegitreIndex {
     a {
+        
         img {
             width: 35px;
             height: 35px;
+            :hover{
+                width: 100px;
+            }
 
         }
     }
@@ -66,7 +118,7 @@
 
 /**Boton de delete*/
 .deleteCart {
-    width: 150px;
+    width: 40px;
     height: 50px;
     cursor: pointer;
     display: flex;
@@ -85,7 +137,8 @@
         width: 15px;
         height: 15px;
         fill: $primary-color;
-        :hover{
+
+        :hover {
             fill: red;
             transition: all 200ms;
         }
@@ -102,6 +155,7 @@
 
 
 .totalCartPrincipal {
+    padding-bottom: 20px;
 
     /* Boton de realizar compra */
     .button {

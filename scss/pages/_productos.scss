@@ -1,66 +1,70 @@
-
-.contenedorProducto{
+.contenedorProducto {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 100px;
     gap: 40px;
-    
+
 
 }
-.tittleProductos{
+
+.tittleProductos {
     padding-left: 20px;
 }
+
 .cardSale {
-   
+
     display: flex;
     justify-content: flex-end;
+
     .cardSale__categoria {
-        
+
         padding: 5px;
         color: aliceblue;
         background-color: $primary-color ;
     }
 }
 
-.card{
-    
-    h5{
+.card {
+
+    h5 {
         text-align: center;
     }
-    .precioStock{
+
+    .precioStock {
         text-align: center;
-    } 
-    button{
+    }
+
+    button {
         background-color: $primary-color ;
     }
 }
 
 
-.cardProductos{
+.cardProductos {
     padding: 50px;
 }
 
 .camiseta {
-    background-color: #fff;
-    box-shadow: 0 3px 10px black;
-    padding: 25px;
-    text-align: center;
-    border-radius: 5px;
-    p{
-       padding: 10px;
-       width: 75px;
-       background-color: $primary-color;
-       color: #D9D9D9;
-       border-radius: 40%;
-       
-      
-       
+    padding: 10px;
+    p {
+        padding: 8px;
+        width: 75px;
+        background-color: $primary-color;
+        color: #D9D9D9;
+        border-radius: 10%;
+        font-family: 'Lora', serif;
+
+
     }
-    img{
+
+    img {
+        width: 300px;
+        height: 400px;
         display: flex;
         padding-bottom: 5px;
     }
+
     span {
         box-sizing: border-box;
     }
@@ -68,10 +72,11 @@
 }
 
 /*Precio camiseta*/
-.camiseta{
-   
-    b{
-        span{color: #D9D9D9;
+.camiseta {
+
+    b {
+        span {
+            color: #D9D9D9;
             padding: 7px;
             background-color: $primary-color;
             border-radius: 30%;
@@ -81,12 +86,21 @@
 
 /*Precio camiseta*/
 
+/*MENU DESPLEGABLE*/
+.offcanvas{
+    height: 65%;
+}
+.productsMenuDesp{
+    max-height: 80%;
+    overflow-y: scroll;
+    
+}
+
 
 
 /*PRODUDCTOS 2*/
 
-.productsMenuDesp{
+.productsMenuDesp {
     display: flex;
     flex-wrap: wrap
 }
-

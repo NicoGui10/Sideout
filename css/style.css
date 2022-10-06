@@ -998,9 +998,6 @@ footer {
 @media screen and (max-width: 546px) {
   .nav__1 {
     left: 78%; }
-  .GaleryItem {
-    width: 150px;
-    height: 120px; }
   .GaleryContainer {
     display: flex;
     flex-wrap: wrap;

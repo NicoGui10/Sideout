@@ -995,14 +995,6 @@ footer {
   .container__cart {
     height: 40px; } }
 
-@media screen and (max-width: 546px) {
-  .nav__1 {
-    left: 78%; }
-  .GaleryContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; } }
-
 @media screen and (max-width: 991px) {
   .ContainerMainIndex {
     width: 100%;
@@ -1042,3 +1034,7 @@ footer {
       grid-template-rows: max-content max-content;
       gap: 3em;
       justify-items: center; } }
+
+@media screen and (max-width: 546px) {
+  .nav__1 {
+    left: 78%; } }

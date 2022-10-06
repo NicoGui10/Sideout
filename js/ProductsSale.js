@@ -1,117 +1,117 @@
 let productosSale =[
     {
     id:1,
-    nombre: "Camiseta ocean",
+    nombre: "Tommy Hilfiger",
     detalle:"sadasdas",
     categoria:"OnSale",
-    precio:5500,
+    precio:17440,
     stock:5,
-    img:"../img/camiseta1.png"
+    img:"https://static.dafiti.com.ar/p/tommy-hilfiger-5146-134049-1-catalog-new.jpg"
 },
 {
     id:2,
-    nombre: "Camiseta Nina",
+    nombre: "Antonio Banderas",
     detalle:"sadasdas",
     categoria:"OnSale",
-    precio:5500,
+    precio:6545,
     stock:5,
-    img:"../img/camiseta2.png"
+    img:"https://static.dafiti.com.ar/p/antonio-banderas-2188-355679-1-catalog-new.jpg"
 },
 
 {
     id:3,
-    nombre: "Camiseta still",
+    nombre: "Benetton",
     detalle:"sadasdas",
     categoria:"OnSale",
-    precio:5500,
+    precio:6500,
     stock:5,
-    img:"../img/camiseta3.png"
+    img:"https://static.dafiti.com.ar/p/benetton-7565-842679-1-catalog-new.jpg"
 },
 
 {
     id:4,
-    nombre: "Camiseta ramen",
+    nombre: "Boss",
     detalle:"sadasdas",
     categoria:"OnSale",
-    precio:5500,
+    precio:5400,
     stock:5,
-    img:"../img/camiseta1.png"
+    img:"https://static.dafiti.com.ar/p/boos-5703-064398-1-catalog-new.jpg"
 },
 
 {
     id:5,
-    nombre: "Camiseta robin",
+    nombre: "Paco Rabanne",
     detalle:"sadasdas",
     categoria:"OnSale",
-    precio:5500,
+    precio:28540,
     stock:5,
-    img:"../img/camiseta5.png"
+    img:"https://static.dafiti.com.ar/p/paco-rabanne-9397-396298-2-catalog-new.jpg"
 },
 
 {
     id:6,
-    nombre: "Camiseta deal",
+    nombre: "Carolina Herrera",
     detalle:"sadasdas",
     categoria:"OnSale",
-    precio:5500,
+    precio:27000,
     stock:5,
-    img:"../img/camiseta6.png"
+    img:"https://static.dafiti.com.ar/p/carolina-herrera-9336-032768-1-catalog-new.jpg"
 },
 
 {
     id:7,
-    nombre: "Camiseta rip",
+    nombre: "212 Vip",
     detalle:"sadasdas",
     categoria:"OnSale",
-    precio:5500,
+    precio:22600,
     stock:5,
-    img:"../img/camiseta7.png"
+    img:"https://static.dafiti.com.ar/p/carolina-herrera-5339-705049-1-catalog-new.jpg"
 },
 
 {
     id:8,
-    nombre: "Camiseta sen",
+    nombre: "Montblanc",
     detalle:"sadasdas",
     categoria:"OnSale",
-    precio:5500,
+    precio:15820,
     stock:5,
-    img:"../img/camiseta8.png"
+    img:"https://static.dafiti.com.ar/p/montblanc-0699-810239-1-catalog-new.jpg"
 },
 {
     id:9,
-    nombre: "Camiseta sen",
+    nombre: "Dolce Gabanna",
     detalle:"sadasdas",
     categoria:"OnSale",
-    precio:5500,
+    precio:19430,
     stock:5,
-    img:"../img/camiseta8.png"
+    img:"https://static.dafiti.com.ar/p/dolce-gabanna-2099-393709-1-catalog-new.jpg"
 },
 {
     id:10,
-    nombre: "Camiseta sen",
+    nombre: "Versace",
     detalle:"sadasdas",
     categoria:"OnSale",
-    precio:5500,
+    precio:22500,
     stock:5,
-    img:"../img/camiseta8.png"
+    img:"https://static.dafiti.com.ar/p/versace-0148-466298-1-catalog-new.jpg"
 },
 {
     id:11,
-    nombre: "Camiseta sen",
+    nombre: "Armani",
     detalle:"sadasdas",
     categoria:"OnSale",
-    precio:5500,
+    precio:29500,
     stock:5,
-    img:"../img/camiseta8.png"
+    img:"https://static.dafiti.com.ar/p/armani-9141-644369-1-catalog-new.jpg"
 },
 {
     id:12,
-    nombre: "Camiseta sen",
+    nombre: "Montblanc",
     detalle:"sadasdas",
     categoria:"OnSale",
-    precio:5500,
+    precio:18780,
     stock:5,
-    img:"../img/camiseta8.png"
+    img:"https://static.dafiti.com.ar/p/montblanc-1325-273859-1-catalog-new.jpg"
 },
 
 

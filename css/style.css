@@ -879,6 +879,9 @@ template {
   padding: 100px;
   gap: 40px; }
 
+.TittleCart {
+  text-align: center; }
+
 .tittleProductos {
   padding-left: 20px; }
 

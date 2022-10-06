@@ -990,13 +990,11 @@ footer {
 
 @media screen and (max-width: 895px) {
   .container__cart {
-    height: 40px; }
-    .container__cart .nav__1 {
-      left: 85%; } }
+    height: 40px; } }
 
 @media screen and (max-width: 546px) {
-  .container__cart .nav__1 {
-    left: 60%; }
+  .nav__1 {
+    left: 78%; }
   .GaleryItem {
     width: 150px;
     height: 120px; }

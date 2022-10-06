@@ -6,7 +6,6 @@
 
 
 .GaleryItem {
-    
     width: 240px;
     margin-bottom: 30px;
     border-radius: 12px;
@@ -22,7 +21,7 @@
 }
 
 .GaleryContainer {
-    padding-left: 2%;
     margin: 0 auto;
-    display: flex;
+    display: block;
+    padding: 2%;
 }

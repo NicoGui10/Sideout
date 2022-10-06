@@ -42,10 +42,35 @@
     .container__cart {
 
         .nav__1 {
-            left: 75%;
+            left: 60%;
         }
 
     }
+
+    .GaleryItem {
+        width: 150px;
+        height: 120px;
+
+    }
+
+    .GaleryContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 

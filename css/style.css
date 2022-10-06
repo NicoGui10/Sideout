@@ -458,9 +458,18 @@ template {
 .CartGrilla thead tr th {
   width: 100px; }
 
-.logo {
-  width: 50px; }
+/*PopIndex*/
+.AlertRegion {
+  color: red; }
 
+.PopSwal {
+  border-radius: 2%; }
+
+.ColorInputSwal {
+  background-color: aliceblue;
+  color: #1D2C53; }
+
+/*PopIndex*/
 .Titulo__index {
   text-align: center;
   padding-top: 20px; }

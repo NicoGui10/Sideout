@@ -940,6 +940,24 @@ template {
   display: flex;
   flex-wrap: wrap; }
 
+.tituloGalery {
+  text-align: center; }
+
+.GaleryItem {
+  width: 240px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  background-color: #CDA279;
+  box-shadow: 0 3px 10px black; }
+
+.GaleryItem:hover {
+  filter: opacity(0.7); }
+
+.GaleryContainer {
+  padding-left: 2%;
+  margin: 0 auto;
+  display: flex; }
+
 footer {
   background-color: #1B2B3B;
   color: white; }

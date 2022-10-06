@@ -1,5 +1,4 @@
 
-
 /**DECLARO CONSTANTES Y LA FUNCION PRINCIPAL */
 
 (function (){
@@ -32,4 +31,3 @@ value = value === 0 ? slider.length :1;
 slider[value-1].classList.add("TestimonyBodyShow");
 }
 })();
-

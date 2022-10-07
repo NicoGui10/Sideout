@@ -99,7 +99,7 @@ function CartLook() { //Cada vez que presiono click guardo en la variable todos 
 
 
         trElement.querySelector(".deleteCart").addEventListener("click", removeItemCart)
-        trElement.querySelector(".ElementCount").addEventListener("Change", SumaCount)
+        trElement.querySelector(".ElementCount").addEventListener("change", SumaCount)
 
     })
     CartTotal();
@@ -146,8 +146,8 @@ function removeItemCart(e) {  //Creo la funcion de remover items
 
 function SumaCount(e) {
     const sumaInput = e.target;
-    const tr = sumaInput.closest(".ItemCart");
-    const title = tr.querySelector(".title").textContent;
+    const trElement = sumaInput.closest(".ItemCart");
+    const title = trElement.querySelector(".title").textContent;
     CarritoProductos.forEach(item => {
         if (item.title.trim() === title) {
             sumaInput.value < 1 ? (sumaInput.value = 1) : sumaInput.value //Vamos a validar el numero ingresado

@@ -952,6 +952,10 @@ template {
   display: flex;
   flex-wrap: wrap; }
 
+.PerfumesAccesorios {
+  box-shadow: 0 0.625em 1em 0 #1D2C53;
+  border-radius: 2%; }
+
 .tituloGalery {
   text-align: center; }
 
@@ -1002,7 +1006,31 @@ footer {
 
 @media screen and (max-width: 895px) {
   .container__cart {
-    height: 40px; } }
+    height: 40px; }
+  .NavSecundarioProductos ul li button {
+    font-size: 15px; }
+  .camiseta {
+    text-align: center;
+    width: 150px;
+    height: 350px; }
+    .camiseta img {
+      width: 150px;
+      height: 160px; }
+    .camiseta button {
+      width: 150px; }
+    .camiseta .TittleCart {
+      text-align: center;
+      width: 100%;
+      font-size: 12px; }
+  .PerfumesAccesorios img {
+    width: 140px;
+    height: 160px; }
+  .PerfumesAccesorios button {
+    width: 130px; }
+  .contenedorProducto {
+    padding: 0;
+    gap: 20px;
+    padding-bottom: 50px; } }
 
 @media screen and (max-width: 991px) {
   .ContainerMainIndex {

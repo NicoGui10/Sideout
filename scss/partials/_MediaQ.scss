@@ -29,6 +29,52 @@
         height: 40px;
 
     }
+.NavSecundarioProductos{
+    ul{
+        li{
+            button{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.camiseta {
+    text-align: center;
+    width: 150px;
+    height: 350px;
+    
+    img{
+        width: 150px;
+        height: 160px;
+    }
+    button{
+        width: 150px;
+        
+    }
+    .TittleCart{ 
+        text-align: center;
+        width: 100%;
+        font-size: 12px;
+    }
+}
+.PerfumesAccesorios{
+    img{
+        width: 140px;
+        height: 160px;
+    }
+    button{
+        width: 130px;
+        
+    }
+   
+}
+.contenedorProducto{
+    padding: 0;
+    gap: 20px;
+    padding-bottom: 50px;
+ 
+}
 
 
 
@@ -71,6 +117,8 @@
 
             }
         }
+
+      
     }
 
     .CardTextMain2 {

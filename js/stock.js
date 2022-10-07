@@ -42,7 +42,7 @@ function mostrarProductosAccesorios(items) {
   items.forEach(element => {
     contenedorProductoAccesorios.innerHTML += `
     
-    <div class="camiseta">
+    <div class="camiseta PerfumesAccesorios">
         <p class="card-text PrecioProduct cardSale__categoria"> ${element.precio} $</p>
                     <img class="CartImg AccesoriosIMG" src=${element.img} alt="camiseta3">
                     
@@ -75,7 +75,7 @@ function mostrarProductosSale(items) {
   items.forEach(element => {
     contenedorProductoSale.innerHTML += `
     
-    <div class="camiseta">
+    <div class="camiseta PerfumesAccesorios">
         <p class="card-text PrecioProduct cardSale__categoria"> ${element.precio} $</p>
                     <img class="CartImg" src=${element.img} alt="camiseta3">
                     

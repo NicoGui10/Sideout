@@ -42,7 +42,20 @@
     }
 }
 
-
+.NavSecundarioProductos {
+    ul {
+        li {
+            :hover{
+                background-color: $primary-color;
+                color: #D9D9D9;
+            }
+            button {
+                font-size: 20px;
+               
+            }
+        }
+    }
+}
 .cardProductos {
     padding: 50px;
 }

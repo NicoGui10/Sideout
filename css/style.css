@@ -911,6 +911,13 @@ template {
 .card button {
   background-color: #1D2C53; }
 
+.NavSecundarioProductos ul li :hover {
+  background-color: #1D2C53;
+  color: #D9D9D9; }
+
+.NavSecundarioProductos ul li button {
+  font-size: 20px; }
+
 .cardProductos {
   padding: 50px; }
 

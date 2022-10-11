@@ -27,7 +27,7 @@
 .message button {
     padding: 1rem;
     font-weight: 400;
-    background-color: #4a4aee;
+    background-color: $primary-color;
     border-radius: 2rem;
     border: none;
     outline: none;
@@ -39,7 +39,7 @@
 }
 
 .message button:hover {
-    background-color: #6464f8;
+    background-color: $Hover-Color;
 }
 
 .form {

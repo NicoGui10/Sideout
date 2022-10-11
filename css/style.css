@@ -694,12 +694,60 @@ template {
     height: 35px; }
 
 /*Boton Register*/
+.RegitreIndex a :hover {
+  width: 15px; }
+
 .RegitreIndex a img {
   width: 35px;
   height: 35px; }
-  .RegitreIndex a img :hover {
-    width: 100px; }
 
+/*Home Menu Responsive*/
+.container-fluid .menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 13%;
+  color: #ffffff;
+  width: 2.5em;
+  height: 2em;
+  border-radius: 0.5em;
+  background: transparent;
+  border: hidden;
+  transition: all .3s; }
+
+.container-fluid .menuButton:hover {
+  border: 1px solid white; }
+
+.container-fluid .menuButton:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff; }
+
+.container-fluid input[type="checkbox"] {
+  display: none;
+  visibility: hidden; }
+
+.container-fluid .menuButton span {
+  width: 30px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 100px;
+  transition: 0.3s ease; }
+
+.container-fluid input[type]:checked ~ span.top {
+  transform: translateY(290%) rotate(45deg);
+  width: 40px; }
+
+.container-fluid input[type]:checked ~ span.bot {
+  transform: translateY(-270%) rotate(-45deg);
+  width: 40px;
+  box-shadow: 0 0 10px #495057; }
+
+.container-fluid input[type]:checked ~ span.mid {
+  transform: translateX(-20px);
+  opacity: 0; }
+
+/*Home Menu Responsive*/
 /**Boton de delete*/
 .deleteCart {
   width: 40px;
@@ -782,7 +830,7 @@ template {
 .message button {
   padding: 1rem;
   font-weight: 400;
-  background-color: #4a4aee;
+  background-color: #1D2C53;
   border-radius: 2rem;
   border: none;
   outline: none;
@@ -793,7 +841,7 @@ template {
   color: #fff; }
 
 .message button:hover {
-  background-color: #6464f8; }
+  background-color: #CDA279; }
 
 .form {
   width: 400px;
@@ -1081,4 +1129,28 @@ footer {
 
 @media screen and (max-width: 546px) {
   .nav__1 {
-    left: 78%; } }
+    left: 78%; }
+  /*Home*/
+  .CardMainIndex {
+    min-height: 200px; }
+    .CardMainIndex h2 {
+      font-size: 18px; }
+    .CardMainIndex .CardTextMain p {
+      font-size: 18px;
+      display: none; }
+  .CardMainIndex2 h3 {
+    font-size: 22px; }
+  .Testimony {
+    padding: 22px; }
+  .TestimonyContainer {
+    min-height: 500px;
+    width: 100%;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8); }
+  /*Home*/
+  /*Login*/
+  .container-form {
+    flex-wrap: wrap;
+    align-content: space-around; }
+  .FormPage {
+    padding-bottom: 75px; }
+  /*Login*/ }

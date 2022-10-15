@@ -4,8 +4,9 @@
 //Declaro constantes
 const
     ClickAgregar = document.querySelectorAll(".buttonAgregar"),
-    ContainerCart = document.querySelector(".ContainerCarttBody"),
-    ProccessPago = document.querySelector(".BtnComprar");
+    ContainerCart = document.querySelector(".ContainerCarttBody");
+/* ProccessPago = document.querySelector(".BtnComprar");*/
+
 let CarritoProductos = []
 
 
@@ -16,10 +17,10 @@ ClickAgregar.forEach(btn => {
 
 function AddCarritoProduct(e) {
     const Button = e.target,
-    ProducItem = Button.closest(".camiseta"), //Le pido que busque la clase mas cercana a Camiseta mediante la funcion de js 
-    ProductTittle = ProducItem.querySelector(".TittleCart").textContent,
-    ProductPrecio = ProducItem.querySelector(".PrecioProduct").textContent,
-    ProductImg = ProducItem.querySelector(".CartImg").src;
+        ProducItem = Button.closest(".camiseta"), //Le pido que busque la clase mas cercana a Camiseta mediante la funcion de js 
+        ProductTittle = ProducItem.querySelector(".TittleCart").textContent,
+        ProductPrecio = ProducItem.querySelector(".PrecioProduct").textContent,
+        ProductImg = ProducItem.querySelector(".CartImg").src;
 
     const NewItemCart = { //Declaro items
         title: ProductTittle,
@@ -123,6 +124,7 @@ function CartTotal() {
     LocalStorage()
 
 
+
 }
 
 
@@ -176,3 +178,7 @@ window.onload = function () {
         CartLook();
     }
 }
+
+
+
+

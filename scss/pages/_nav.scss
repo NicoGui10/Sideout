@@ -97,3 +97,23 @@
 
 
 /*NavSecundarioProductos*/
+
+
+
+
+.divmargin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 5px;
+    input{
+        width: 170px;
+        height: 40px;
+    }
+    select{
+        width: 170px;
+        height: 40px;
+    }
+   
+}

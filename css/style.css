@@ -384,6 +384,19 @@ template {
       font-size: 2em; }
 
 /*NavSecundarioProductos*/
+.divmargin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 5px; }
+  .divmargin input {
+    width: 170px;
+    height: 40px; }
+  .divmargin select {
+    width: 170px;
+    height: 40px; }
+
 .container__cart {
   display: flex;
   justify-content: flex-end;

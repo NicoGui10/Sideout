@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
 
     <!-- Google Fonts -->
+    
 
 
     <!-- Toastify -->
@@ -103,7 +104,6 @@
 
 
     <!--carrito outcanvas--->
-
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header productsMenuDesp">
             <h5 id="offcanvasRightLabel">Carrito</h5>
@@ -133,8 +133,8 @@
             <div class="col totalPrincipalCheout">
                 <h3 class="TotalCart">Total 0</h3>
             </div>
-            <button class="button">
-                <a href="">procesar pago</a>
+            <button class="button" id="ProcesarPago" data-bs-dismiss="offcanvas" aria-label="Close">
+                <a id="ProcesarPago" href="" data-bs-dismiss="offcanvas" aria-label="Close">Finalizar Orden</a>
             </button>
         </div>
     </div>
@@ -233,6 +233,10 @@
         crossorigin="anonymous"></script>
     <!-- JavaScript Bboostrap-->
 
+    <!-- JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+     <!-- JQuery-->
+
     <!-- Alerts-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
@@ -243,6 +247,7 @@
     <script src="../js/ProductsSale.js"></script>
     <script src="../js/stock.js"></script>
     <script src="../js/Cart.js"></script>
+    <script src="../js/ProcesarPago.js"></script>
 
 
 

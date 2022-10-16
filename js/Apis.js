@@ -1,28 +1,47 @@
 /***Api Prueba***/
 
+const CriptoYa ="https://criptoya.com/api/decrypto/usdt/ars/1";
 
+let DivBTC = document.getElementById("DivBTC");
 
-
-
-
-
-
-/*
 setInterval(()=>{
-fetch(CriptoYa)
-/*
-.then(response => response.json())
-.then(({BTC,totalAsk,totalBid})=>{
-    divCryptoYa.innerHTML = `
-    <h2>Tipos de dolar:</h2>
-<p>Bitoin: ${BTC}</p>
-<p>USDT: ${totalAsk}</p>
-<p>DAI: ${totalBid}</p>
-<p></p>
+    fetch(CriptoYa)
+    
+    .then(res => res.json())
+   
+    .then(({totalAsk})=>{
+        DivBTC.innerHTML = `
+        <h2>USDT - ARS:</h2>
+    
+    <p>USDT: ${totalAsk}</p>
+    
+    
+        `
+    })
+    .catch(error => console.error(error))
+    })
 
 
+    const CriptoYa2 ="https://criptoya.com/api/decrypto/btc/ars/1";
 
-    `
-})
-.catch(error => console.error(error))
-}, 3000)*/
+    let DivBTC2 = document.getElementById("DivBTC2");
+    
+    setInterval(()=>{
+        fetch(CriptoYa2)
+        
+        .then(res => res.json())
+       
+        .then(({totalAsk})=>{
+            DivBTC2.innerHTML = `
+            <h2>BTC - ARS:</h2>
+        
+        <p>BTC: ${totalAsk}</p>
+        
+        
+            `
+        })
+        .catch(error => console.error(error))
+        })
+    
+
+

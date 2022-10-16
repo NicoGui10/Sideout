@@ -1,94 +1,65 @@
 $('#ProcesarPago').click(function (e) {
     e.preventDefault();
     Swal.fire({
-        title: 'Completa Los Siguientes campos',
+        title: 'Informacion de entrega',
         showDenyButton: true,
         height: '60%',
-        confirmButtonText: 'Procesar Pago',
-        denyButtonText: `Seguir Comprando`,
+        confirmButtonText: 'Siguiente',
+        denyButtonText: `Cancelar Compra`,
         html:
             '<div class="divmargin"><input type="text" id="name" required placeholder="Nombre(s) *"><input type="text" id="name" required placeholder="Apellido *"></div>'+
             '<div class="divmargin"><input type="text" id="name" required placeholder="Calle *"><input type="text" id="name" required placeholder="Numero *"></div>'+
             '<div class="divmargin"><input type="text" id="name" required placeholder="departamento"><input type="text" id="name" required placeholder="Codigo Postal *"></div>'+
-            '<div class="divmargin"><input type="text" id="name" required placeholder="Numero"><select name="" id=""><option value="">Mercado Pago</option> <option value="">Visa</option> <option value="">Amex</option> <option value="">MasterCard</option></select></div>'+
+            '<div class="divmargin"><input type="text" id="name" required placeholder="Ciudad"><select name="" id=""><option value="">Buenos Aires</option> <option value="">Cordoba</option> <option value="">Mendoza</option> <option value="">Resto de Argentina</option></select></div>'
             
-            '<div class="divmargin"><input type="text" id="name" required placeholder="Numero"><input type="text" id="name" required placeholder="Piso"></div>',
+            
 
     })
     
+    
     .then((result) => {
-        /* Read more about isConfirmed, isDenied below */
         
         if (result.isConfirmed) {
-            Swal.fire('Saved!', '', 'success')
+
+            (async () => {
+
+                const { value: ProcesarPAgo } = await Swal.fire({
+                    title: 'Informacion de entrega',
+                    showDenyButton: true,
+                    height: '60%',
+                    confirmButtonText: 'Procesar Pago',
+                    denyButtonText: `Cancelar Compra`,
+                    confirmButtonColor: '#1D2C53',
+                    customClass:{
+                        confirmButton:'ProcesarPagoBtn'
+                    },
+                    html:
+                        '<div class="divmarginPay"><label  for="cardCvc">Tipo De Tarjeta</label><select name="" id=""><option value="">Visa</option> <option value="">America Express</option> <option value="">Mastercard</option> <option value="">CryptoCard</option></select></div>'+
+                        '<div class="divmarginPay"><label class="form__label" for="cardholder">Cardholder Name</label><input type="text" name="cardholder"  placeholder=" Nicolas Guido"></div>'+
+                        '<div class="divmarginPay"><label  for="cardNumber">Card Number</label><input type="text" name="cardNumber"  maxlength="19" placeholder=" 1234 5678 9123 0000"></div>'+
+                        '<div class="divmarginPay"><label  for="cardMonth">Exp. Date (MM)</label><input type="text" maxlength="2" name="cardMonth"  placeholder="MM"></div>'+
+                        '<div class="divmarginPay"><label  for="cardMonth">Exp. Date (YY)</label><input type="text" maxlength="2" name="cardYear" placeholder="YY"></div>'+
+                        '<div class="divmarginPay"><label  for="cardCvc">CVC</label><input type="text" maxlength="3" name="cardCvc"  placeholder="e.g. 123"></div>'
+                        
+                        
+            
+                });
+                if (ProcesarPAgo) {
+                    Swal.fire({
+                        icon: 'success',
+                        background: "#1D2C53",
+                        color: '#CDA279',
+                        title: 'Pago Aprobado',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                    
+                }
+            })()
+            
         } else if (result.isDenied) {
             Swal.fire('Changes are not saved', '', 'info')
         }
     })
-    // title:
-    // text:
-    // html:
-    // icon:
-    // confirmButtonText:
-    // footer:
-    // width:
-    // padding:
-    // background:
-    // grow:
-    // backdrop:
-    // timer:
-    // timerProgressBar:
-    // toast:
-    // position:
-    // allowOutsideClick:
-    // allowEscapeKey:
-    // allowEnterKey:
-    // stopKeydownPropagation:
-
-    // input:
-    // inputPlaceholder:
-    // inputValue:
-    // inputOptions:
-
-    //  customClass:
-    // 	container:
-    // 	popup:
-    // 	header:
-    // 	title:
-    // 	closeButton:
-    // 	icon:
-    // 	image:
-    // 	content:
-    // 	input:
-    // 	actions:
-    // 	confirmButton:
-    // 	cancelButton:
-    // 	footer:	
-
-    // showConfirmButton:
-    // confirmButtonColor:
-    // confirmButtonAriaLabel:
-
-    // showCancelButton:
-    // cancelButtonText:
-    // cancelButtonColor:
-    // cancelButtonAriaLabel:
-
-    // buttonsStyling:
-    // showCloseButton:
-    // closeButtonAriaLabel:
-
-
-    // imageUrl:
-    // imageWidth:
-    // imageHeight:
-    // imageAlt:
-
-    // html:
-    if (email) {
-        Swal.fire(`Entered email: ${email}`)
-      }
+   
 })
-
-
-

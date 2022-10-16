@@ -6,6 +6,7 @@ const contenedorProductoSale = document.getElementById("contenedorProductoSale")
 //Funcion productos general
 function mostrarProductos(items) {
   items.forEach(element => {
+    
     contenedorProducto.innerHTML += `
     <div class="camiseta">
         <p class="card-text PrecioProduct cardSale__categoria"> ${element.precio} $</p>

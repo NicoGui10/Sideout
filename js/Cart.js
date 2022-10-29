@@ -158,7 +158,7 @@ function SumaCount(e) {
             CartTotal()
         }
     })
-    console.log(CarritoProductos)  //Tengo que corregir el error que me da y no me deja sumar en el carrito 
+
 }
 
 

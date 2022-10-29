@@ -103,6 +103,3 @@ function mostrarProductosSale(items) {
 }
 mostrarProductosSale(productosSale)
 
-
-/**<button class="btn btn-primary buttonAgregar"  tabindex="-1" role="button"
-                aria-disabled="true" data-id=${element.id}>Comprar</button>      */

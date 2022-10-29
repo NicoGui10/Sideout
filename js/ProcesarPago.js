@@ -52,7 +52,9 @@ $('#ProcesarPago').click(function (e) {
                         title: 'Pago Aprobado',
                         showConfirmButton: false,
                         timer: 1500
+                        
                     })
+                    
                     
                 }
             })()
@@ -60,6 +62,9 @@ $('#ProcesarPago').click(function (e) {
         } else if (result.isDenied) {
             Swal.fire('Changes are not saved', '', 'info')
         }
+        
     })
+    
    
 })
+
